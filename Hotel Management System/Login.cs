@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Hotel_Management_System
 {
@@ -26,6 +27,33 @@ namespace Hotel_Management_System
         {
             textPassword.Clear();
             textUsername.Clear();
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            SqlConnection sqlConnection = new SqlConnection(Helper.ConnectionVal("HotelDb"));
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT * FROM Users WHERE Username='" + textUsername.Text + "' AND Password='" + textPassword.Text + "'", sqlConnection);
+            DataTable dt = new DataTable();
+
+            sqlDataAdapter.Fill(dt);
+
+            if (dt.Rows.Count == 1)
+            {
+                this.Hide();
+                Dashboard dashboard = new Dashboard();
+                dashboard.Show();
+            }
+            else
+            {
+                MessageBox.Show("Wrong password or username");
+            }
+
+        }
+
+        private void keyDown_Event(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                buttonLogin_Click(sender, e);
         }
     }
 }

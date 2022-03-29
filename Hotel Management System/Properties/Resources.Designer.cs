@@ -123,6 +123,16 @@ namespace Hotel_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blackSettings {
+            get {
+                object obj = ResourceManager.GetObject("blackSettings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blaclEdit {
             get {
                 object obj = ResourceManager.GetObject("blaclEdit", resourceCulture);
@@ -196,6 +206,16 @@ namespace Hotel_Management_System.Properties {
         internal static System.Drawing.Bitmap coloredSearch {
             get {
                 object obj = ResourceManager.GetObject("coloredSearch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coloredSettings {
+            get {
+                object obj = ResourceManager.GetObject("coloredSettings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
