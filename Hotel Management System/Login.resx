@@ -117,47 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="blackCancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blackCancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blackClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blackClear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blackLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blackLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blackLogout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\006-logout-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blackPlus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blackSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\007-search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blaclEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\001-edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coloredCancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coloredCancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coloredClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coloredClear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coloredEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\004-edit-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coloredLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\002-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coloredLogout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\005-logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coloredPlus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coloredSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\008-search-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonLogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
+        1wAAAdcBjJIIaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANRSURBVHhe7ds5
+        qBNBHMfxKN4iXmDhgSLeNrZaWIiIFvaWViIoKoI2ilfjgXY2VhYKaieIhYhYeKCFiqJ4gAdejSB2Wnh9
+        f/gG/k72yCTz3svu7A8+kGyyk+T3stndyUurTzMaZ/EVV7ASSWUd/niuYRWSyGb4BTi3sQa1TlEBTq2L
+        8Av45V23bmA1ahW/gG3Yic9mmU/viLWoRfwCdF2ZiE6K2IhKJ68AlwlQEZ9g72dVuoiyAlzGYguKiriD
+        yhXRaQEuroiPsOtZlSoitACXMSgr4i4GrQjtji7jeo+ewT7pTgtwGYcdKCtiIaJFb8NvyHqwXoUW4KIi
+        tiOviEeIlrnIepAYui3ARX8cHUt8gB33N6JlHuzgMfVagIuKeAg7drT4Beh0ttvoBduxYhWg3IQdO1qa
+        AmAHrm0BIzD938X/kkQBi/EeWvE8JsEliQJOw678CiugJFGAXpRdWX5AZ2bJFuBoZsZeT64AXxIF+Cct
+        VhIFLMBR6JjaLpd7sHuJkAxpAbNwAmc68BJ2ZX3wKRvwBfY2sXuJkJQVMAVHcHjgckjaCrjvLQjhClBm
+        4xb8+3zHVoSkrIBLcLdd1IKAtBVQNOdeRG/7qbAZhbxN4gI63STKCngDd9trLQhIWwH2SoiTyEuvm0RZ
+        AW/hbtPlkBQWoA+u+R2YhrIUbRKbUJRhK0A3xkzeJqESxiMvTQGw9x+yApLfBEKcQl4q9SHYy27QfydU
+        cjeot71dEKIfDoRUbEjaCpiJ48g69PX106HwoQGTtSAgbQWEpJYnQyFpTodhVy6SXAHJToklNSma/LS4
+        vhh5B33qn0NyX4wo+mosaxoqmQLy0hQAO3BTALpNUwDsWE0BiJWmANixo8UvQD9x0b+vd0PfVNmxKllA
+        TDEKWIR98OctokUzQnbgmLotYAn24zGyxv2JaBmJ58h6oF6FFLAUB/AEWWNZ2kyjZgZ241iPrsI+0bIC
+        luEgnsKul+cB9qLbGatBj16wfcJZBSyH5gSLZqUs3U/31wld3yevgG5ftD4AKxW/AP2G4IW3LItO0/X/
+        DnugvVJl4xdQxv2lo/4AYjjTSQHuRWtqvnZZD/8F6+2tHz7twhzUOvqOUecS+vm8vm7TpKsOtCKn1foL
+        58NcYxt0KlUAAAAASUVORK5CYII=
+</value>
   </data>
 </root>
