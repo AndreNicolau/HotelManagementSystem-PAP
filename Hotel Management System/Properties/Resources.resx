@@ -166,4 +166,46 @@
   <data name="coloredSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coloredSettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_128_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\128px-icons\128-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_128_check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\128px-icons\128-check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_128_cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\128px-icons\128-cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_128_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\128px-icons\128-search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_128_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\128px-icons\128-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_128_sign_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\128px-icons\128-sign-in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_128_sign_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\128px-icons\128-sign-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_64_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\64px-icons\64-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_64_check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\64px-icons\64-check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_64_cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\64px-icons\64-cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_64_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\64px-icons\64-search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_64_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\64px-icons\64-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_64_sign_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\64px-icons\64-sign-in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_64_sign_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\64px-icons\64-sign-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

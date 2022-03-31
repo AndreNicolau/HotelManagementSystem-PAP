@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIn.Designer.cs">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CheckIn.resx">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +183,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\coloredSettings.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\128px-icons\128-add.png" />
+    <Resource Include="Resources\128px-icons\128-check.png" />
+    <Resource Include="Resources\128px-icons\128-cross.png" />
+    <Resource Include="Resources\128px-icons\128-search.png" />
+    <Resource Include="Resources\128px-icons\128-settings.png" />
+    <Resource Include="Resources\128px-icons\128-sign-in.png" />
+    <Resource Include="Resources\128px-icons\128-sign-out.png" />
+    <Resource Include="Resources\64px-icons\64-add.png" />
+    <Resource Include="Resources\64px-icons\64-check.png" />
+    <Resource Include="Resources\64px-icons\64-cross.png" />
+    <Resource Include="Resources\64px-icons\64-search.png" />
+    <Resource Include="Resources\64px-icons\64-settings.png" />
+    <Resource Include="Resources\64px-icons\64-sign-in.png" />
+    <Resource Include="Resources\64px-icons\64-sign-out.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
