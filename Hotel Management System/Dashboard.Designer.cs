@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -35,7 +36,12 @@
             this.logoutButton = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hotelDbDataSet = new Hotel_Management_System.HotelDbDataSet();
+            this.clientsTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.ClientsTableAdapter();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -53,7 +59,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(20);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(15);
-            this.button2.Size = new System.Drawing.Size(1213, 200);
+            this.button2.Size = new System.Drawing.Size(270, 200);
             this.button2.TabIndex = 4;
             this.button2.Text = "Settings";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -94,6 +100,7 @@
             this.buttonPlus.Text = "Register Client";
             this.buttonPlus.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonPlus.UseVisualStyleBackColor = false;
+            this.buttonPlus.Click += new System.EventHandler(this.buttonPlus_Click);
             // 
             // logoutButton
             // 
@@ -133,6 +140,7 @@
             this.searchButton.Text = "Search";
             this.searchButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -147,6 +155,20 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1275, 809);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "Clients";
+            this.clientsBindingSource.DataSource = this.hotelDbDataSet;
+            // 
+            // hotelDbDataSet
+            // 
+            this.hotelDbDataSet.DataSetName = "HotelDbDataSet";
+            this.hotelDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientsTableAdapter
+            // 
+            this.clientsTableAdapter.ClearBeforeFill = true;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -158,7 +180,10 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -170,6 +195,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private HotelDbDataSet hotelDbDataSet;
+        private System.Windows.Forms.BindingSource clientsBindingSource;
+        private HotelDbDataSetTableAdapters.ClientsTableAdapter clientsTableAdapter;
     }
 }
 

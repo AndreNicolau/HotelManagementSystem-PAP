@@ -10,3 +10,9 @@ C:\Users\andre\source\repos\AndreNicolau\HotelManagementSystem-PAP\Hotel Managem
 C:\Users\andre\source\repos\AndreNicolau\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel Management System.pdb
 C:\Users\andre\source\repos\AndreNicolau\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.Dashboard.resources
 C:\Users\andre\source\repos\AndreNicolau\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.Login.resources
+C:\Users\andre\source\repos\AndreNicolau\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel Management System.g.resources
+C:\Users\andre\source\repos\AndreNicolau\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.CheckIn.resources
+C:\Users\andre\source\repos\AndreNicolau\HotelManagementSystem-PAP\Hotel Management System\bin\Debug\Dapper.dll
+C:\Users\andre\source\repos\AndreNicolau\HotelManagementSystem-PAP\Hotel Management System\bin\Debug\Dapper.xml
+C:\Users\andre\source\repos\AndreNicolau\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.SearchForm.resources
+C:\Users\andre\source\repos\AndreNicolau\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel Management System.csproj.CopyComplete

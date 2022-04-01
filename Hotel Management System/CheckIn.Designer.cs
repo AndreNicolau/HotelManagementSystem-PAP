@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.texFirstName = new System.Windows.Forms.TextBox();
+            this.textFirstName = new System.Windows.Forms.TextBox();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hotelDbDataSet = new Hotel_Management_System.HotelDbDataSet();
             this.textLastName = new System.Windows.Forms.TextBox();
             this.textContact = new System.Windows.Forms.TextBox();
             this.textEmail = new System.Windows.Forms.TextBox();
@@ -42,6 +45,9 @@
             this.buttonCheckIn = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.clientsTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.ClientsTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNights)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -97,39 +103,53 @@
             this.label5.Text = "Email";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // texFirstName
+            // textFirstName
             // 
-            this.texFirstName.Location = new System.Drawing.Point(88, 44);
-            this.texFirstName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.texFirstName.Name = "texFirstName";
-            this.texFirstName.Size = new System.Drawing.Size(270, 26);
-            this.texFirstName.TabIndex = 5;
-            this.texFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "firstName", true));
+            this.textFirstName.Location = new System.Drawing.Point(88, 44);
+            this.textFirstName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textFirstName.Name = "textFirstName";
+            this.textFirstName.Size = new System.Drawing.Size(270, 30);
+            this.textFirstName.TabIndex = 5;
+            this.textFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "Clients";
+            this.clientsBindingSource.DataSource = this.hotelDbDataSet;
+            // 
+            // hotelDbDataSet
+            // 
+            this.hotelDbDataSet.DataSetName = "HotelDbDataSet";
+            this.hotelDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textLastName
             // 
+            this.textLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "lastName", true));
             this.textLastName.Location = new System.Drawing.Point(88, 118);
             this.textLastName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textLastName.Name = "textLastName";
-            this.textLastName.Size = new System.Drawing.Size(270, 26);
+            this.textLastName.Size = new System.Drawing.Size(270, 30);
             this.textLastName.TabIndex = 6;
             this.textLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textContact
             // 
+            this.textContact.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "phoneNumber", true));
             this.textContact.Location = new System.Drawing.Point(88, 192);
             this.textContact.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textContact.Name = "textContact";
-            this.textContact.Size = new System.Drawing.Size(270, 26);
+            this.textContact.Size = new System.Drawing.Size(270, 30);
             this.textContact.TabIndex = 7;
             this.textContact.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textEmail
             // 
+            this.textEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "email", true));
             this.textEmail.Location = new System.Drawing.Point(88, 266);
             this.textEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(270, 26);
+            this.textEmail.Size = new System.Drawing.Size(270, 30);
             this.textEmail.TabIndex = 8;
             this.textEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -152,7 +172,7 @@
             0,
             0});
             this.numNights.Name = "numNights";
-            this.numNights.Size = new System.Drawing.Size(270, 26);
+            this.numNights.Size = new System.Drawing.Size(270, 30);
             this.numNights.TabIndex = 10;
             this.numNights.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.numNights.Value = new decimal(new int[] {
@@ -175,6 +195,7 @@
             this.buttonCheckIn.Text = "Check In";
             this.buttonCheckIn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonCheckIn.UseVisualStyleBackColor = false;
+            this.buttonCheckIn.Click += new System.EventHandler(this.buttonCheckIn_Click);
             // 
             // buttonCancel
             // 
@@ -204,16 +225,20 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.textContact);
             this.panel1.Controls.Add(this.textEmail);
-            this.panel1.Controls.Add(this.texFirstName);
+            this.panel1.Controls.Add(this.textFirstName);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(41, 108);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(425, 562);
             this.panel1.TabIndex = 13;
             // 
+            // clientsTableAdapter
+            // 
+            this.clientsTableAdapter.ClearBeforeFill = true;
+            // 
             // CheckIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 700);
             this.Controls.Add(this.panel1);
@@ -224,6 +249,9 @@
             this.Name = "CheckIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Check In";
+            this.Load += new System.EventHandler(this.CheckIn_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNights)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -238,7 +266,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox texFirstName;
+        private System.Windows.Forms.TextBox textFirstName;
         private System.Windows.Forms.TextBox textLastName;
         private System.Windows.Forms.TextBox textContact;
         private System.Windows.Forms.TextBox textEmail;
@@ -247,5 +275,8 @@
         private System.Windows.Forms.Button buttonCheckIn;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Panel panel1;
+        private HotelDbDataSet hotelDbDataSet;
+        private System.Windows.Forms.BindingSource clientsBindingSource;
+        private HotelDbDataSetTableAdapters.ClientsTableAdapter clientsTableAdapter;
     }
 }
