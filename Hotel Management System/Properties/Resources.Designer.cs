@@ -65,7 +65,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _128_add {
             get {
-                object obj = ResourceManager.GetObject("_128_add", resourceCulture);
+                object obj = ResourceManager.GetObject("128_add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _128_check {
             get {
-                object obj = ResourceManager.GetObject("_128_check", resourceCulture);
+                object obj = ResourceManager.GetObject("128_check", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _128_cross {
             get {
-                object obj = ResourceManager.GetObject("_128_cross", resourceCulture);
+                object obj = ResourceManager.GetObject("128_cross", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +95,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _128_search {
             get {
-                object obj = ResourceManager.GetObject("_128_search", resourceCulture);
+                object obj = ResourceManager.GetObject("128_search", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -105,7 +105,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _128_settings {
             get {
-                object obj = ResourceManager.GetObject("_128_settings", resourceCulture);
+                object obj = ResourceManager.GetObject("128_settings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,7 +115,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _128_sign_in {
             get {
-                object obj = ResourceManager.GetObject("_128_sign_in", resourceCulture);
+                object obj = ResourceManager.GetObject("128_sign_in", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -125,7 +125,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _128_sign_out {
             get {
-                object obj = ResourceManager.GetObject("_128_sign_out", resourceCulture);
+                object obj = ResourceManager.GetObject("128_sign_out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -135,7 +135,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _64_add {
             get {
-                object obj = ResourceManager.GetObject("_64_add", resourceCulture);
+                object obj = ResourceManager.GetObject("64_add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -155,7 +155,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _64_check {
             get {
-                object obj = ResourceManager.GetObject("_64_check", resourceCulture);
+                object obj = ResourceManager.GetObject("64_check", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -165,7 +165,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _64_cross {
             get {
-                object obj = ResourceManager.GetObject("_64_cross", resourceCulture);
+                object obj = ResourceManager.GetObject("64_cross", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -185,7 +185,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _64_search {
             get {
-                object obj = ResourceManager.GetObject("_64_search", resourceCulture);
+                object obj = ResourceManager.GetObject("64_search", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -195,7 +195,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _64_settings {
             get {
-                object obj = ResourceManager.GetObject("_64_settings", resourceCulture);
+                object obj = ResourceManager.GetObject("64_settings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -205,7 +205,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _64_sign_in {
             get {
-                object obj = ResourceManager.GetObject("_64_sign_in", resourceCulture);
+                object obj = ResourceManager.GetObject("64_sign_in", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -215,167 +215,7 @@ namespace Hotel_Management_System.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _64_sign_out {
             get {
-                object obj = ResourceManager.GetObject("_64_sign_out", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blackCancel {
-            get {
-                object obj = ResourceManager.GetObject("blackCancel", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blackClear {
-            get {
-                object obj = ResourceManager.GetObject("blackClear", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blackLogin {
-            get {
-                object obj = ResourceManager.GetObject("blackLogin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blackLogout {
-            get {
-                object obj = ResourceManager.GetObject("blackLogout", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blackPlus {
-            get {
-                object obj = ResourceManager.GetObject("blackPlus", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blackSearch {
-            get {
-                object obj = ResourceManager.GetObject("blackSearch", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blackSettings {
-            get {
-                object obj = ResourceManager.GetObject("blackSettings", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blaclEdit {
-            get {
-                object obj = ResourceManager.GetObject("blaclEdit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap coloredCancel {
-            get {
-                object obj = ResourceManager.GetObject("coloredCancel", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap coloredClear {
-            get {
-                object obj = ResourceManager.GetObject("coloredClear", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap coloredEdit {
-            get {
-                object obj = ResourceManager.GetObject("coloredEdit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap coloredLogin {
-            get {
-                object obj = ResourceManager.GetObject("coloredLogin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap coloredLogout {
-            get {
-                object obj = ResourceManager.GetObject("coloredLogout", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap coloredPlus {
-            get {
-                object obj = ResourceManager.GetObject("coloredPlus", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap coloredSearch {
-            get {
-                object obj = ResourceManager.GetObject("coloredSearch", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap coloredSettings {
-            get {
-                object obj = ResourceManager.GetObject("coloredSettings", resourceCulture);
+                object obj = ResourceManager.GetObject("64_sign_out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

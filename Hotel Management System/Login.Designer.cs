@@ -33,11 +33,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textUsername = new System.Windows.Forms.TextBox();
             this.textPassword = new System.Windows.Forms.TextBox();
-            this.buttonClose = new System.Windows.Forms.Button();
-            this.buttonClear = new System.Windows.Forms.Button();
-            this.buttonLogin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.buttonClear = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@
             this.textUsername.Location = new System.Drawing.Point(12, 151);
             this.textUsername.Margin = new System.Windows.Forms.Padding(4);
             this.textUsername.Name = "textUsername";
-            this.textUsername.Size = new System.Drawing.Size(376, 30);
+            this.textUsername.Size = new System.Drawing.Size(376, 26);
             this.textUsername.TabIndex = 2;
             this.textUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyDown_Event);
             // 
@@ -75,42 +75,38 @@
             this.textPassword.Location = new System.Drawing.Point(12, 235);
             this.textPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(375, 30);
+            this.textPassword.Size = new System.Drawing.Size(375, 26);
             this.textPassword.TabIndex = 3;
             this.textPassword.UseSystemPasswordChar = true;
             this.textPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyDown_Event);
             // 
-            // buttonClose
+            // label3
             // 
-            this.buttonClose.BackColor = System.Drawing.Color.Red;
-            this.buttonClose.Image = global::Hotel_Management_System.Properties.Resources.blackCancel;
-            this.buttonClose.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonClose.Location = new System.Drawing.Point(10, 150);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(5);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
-            this.buttonClose.Size = new System.Drawing.Size(130, 130);
-            this.buttonClose.TabIndex = 6;
-            this.buttonClose.Text = "Close";
-            this.buttonClose.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonClose.UseVisualStyleBackColor = false;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            this.label3.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(4);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(400, 65);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Login";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // buttonClear
+            // flowLayoutPanel1
             // 
-            this.buttonClear.BackColor = System.Drawing.Color.Gold;
-            this.buttonClear.Image = global::Hotel_Management_System.Properties.Resources.blackClear;
-            this.buttonClear.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonClear.Location = new System.Drawing.Point(150, 10);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(5);
-            this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
-            this.buttonClear.Size = new System.Drawing.Size(130, 130);
-            this.buttonClear.TabIndex = 5;
-            this.buttonClear.Text = "Clear";
-            this.buttonClear.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonClear.UseVisualStyleBackColor = false;
-            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Window;
+            this.flowLayoutPanel1.Controls.Add(this.buttonLogin);
+            this.flowLayoutPanel1.Controls.Add(this.buttonClear);
+            this.flowLayoutPanel1.Controls.Add(this.buttonClose);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 400);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(400, 300);
+            this.flowLayoutPanel1.TabIndex = 8;
             // 
             // buttonLogin
             // 
@@ -128,36 +124,44 @@
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-            // label3
+            // buttonClear
             // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(400, 65);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Login";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonClear.BackColor = System.Drawing.Color.Gold;
+            this.buttonClear.Image = ((System.Drawing.Image)(resources.GetObject("buttonClear.Image")));
+            this.buttonClear.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonClear.Location = new System.Drawing.Point(150, 10);
+            this.buttonClear.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            this.buttonClear.Size = new System.Drawing.Size(130, 130);
+            this.buttonClear.TabIndex = 5;
+            this.buttonClear.Text = "Clear";
+            this.buttonClear.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonClear.UseVisualStyleBackColor = false;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
-            // flowLayoutPanel1
+            // buttonClose
             // 
-            this.flowLayoutPanel1.Controls.Add(this.buttonLogin);
-            this.flowLayoutPanel1.Controls.Add(this.buttonClear);
-            this.flowLayoutPanel1.Controls.Add(this.buttonClose);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 303);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(400, 355);
-            this.flowLayoutPanel1.TabIndex = 8;
+            this.buttonClose.BackColor = System.Drawing.Color.Red;
+            this.buttonClose.Image = ((System.Drawing.Image)(resources.GetObject("buttonClose.Image")));
+            this.buttonClose.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonClose.Location = new System.Drawing.Point(10, 150);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            this.buttonClose.Size = new System.Drawing.Size(130, 130);
+            this.buttonClose.TabIndex = 6;
+            this.buttonClose.Text = "Close";
+            this.buttonClose.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 658);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(400, 700);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -165,7 +169,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textUsername);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

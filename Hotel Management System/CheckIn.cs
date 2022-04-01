@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Hotel_Management_System
@@ -19,9 +12,14 @@ namespace Hotel_Management_System
 
         private void CheckIn_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'hotelDbDataSet.Clients' table. You can move, or remove it, as needed.
-            this.clientsTableAdapter.Fill(this.hotelDbDataSet.Clients);
-
+            // clears all TextBox
+            foreach (Control control in Controls)
+            {
+                if (control is TextBox)
+                {
+                    (control as TextBox).Clear();
+                }
+            }
         }
 
         private void buttonCheckIn_Click(object sender, EventArgs e)
@@ -39,6 +37,8 @@ namespace Hotel_Management_System
             {
                 MessageBox.Show(ex.Message);
             }
+
+            clientsTableAdapter.Fill(this.hotelDbDataSet.Clients);
 
             this.Close();
         }

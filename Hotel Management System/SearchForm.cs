@@ -46,6 +46,8 @@ namespace Hotel_Management_System
             UpdateBinding();
 
             textLastName.Clear();
+
+            
         }
 
         private void SearchForm_Load(object sender, EventArgs e)
@@ -53,11 +55,25 @@ namespace Hotel_Management_System
             // TODO: This line of code loads data into the 'hotelDbDataSet.Clients' table. You can move, or remove it, as needed.
             this.clientsTableAdapter.Fill(this.hotelDbDataSet.Clients);
 
+            foreach (Control control in this.Controls)
+            {
+                if (control is TextBox)
+                {
+                    (control as TextBox).Clear();
+                }
+            }
+
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textLastName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                searchButton.PerformClick();
         }
     }
 

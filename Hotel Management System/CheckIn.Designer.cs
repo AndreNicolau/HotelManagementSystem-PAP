@@ -54,19 +54,22 @@
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.SystemColors.Menu;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 34);
+            this.label1.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(432, 46);
+            this.label1.Size = new System.Drawing.Size(500, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Check In";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(84, 20);
-            this.label2.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.label2.Location = new System.Drawing.Point(113, 73);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 20, 5, 5);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(270, 20);
             this.label2.TabIndex = 1;
@@ -75,8 +78,8 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(84, 94);
-            this.label3.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.label3.Location = new System.Drawing.Point(113, 158);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 20, 5, 5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(270, 20);
             this.label3.TabIndex = 2;
@@ -85,8 +88,8 @@
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(84, 168);
-            this.label4.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.label4.Location = new System.Drawing.Point(113, 232);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 20, 5, 5);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(270, 20);
             this.label4.TabIndex = 3;
@@ -95,8 +98,8 @@
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(84, 242);
-            this.label5.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.label5.Location = new System.Drawing.Point(113, 306);
+            this.label5.Margin = new System.Windows.Forms.Padding(5, 20, 5, 5);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(270, 20);
             this.label5.TabIndex = 4;
@@ -106,10 +109,10 @@
             // textFirstName
             // 
             this.textFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "firstName", true));
-            this.textFirstName.Location = new System.Drawing.Point(88, 44);
-            this.textFirstName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textFirstName.Location = new System.Drawing.Point(113, 103);
+            this.textFirstName.Margin = new System.Windows.Forms.Padding(5);
             this.textFirstName.Name = "textFirstName";
-            this.textFirstName.Size = new System.Drawing.Size(270, 30);
+            this.textFirstName.Size = new System.Drawing.Size(270, 26);
             this.textFirstName.TabIndex = 5;
             this.textFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -126,37 +129,37 @@
             // textLastName
             // 
             this.textLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "lastName", true));
-            this.textLastName.Location = new System.Drawing.Point(88, 118);
-            this.textLastName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textLastName.Location = new System.Drawing.Point(113, 188);
+            this.textLastName.Margin = new System.Windows.Forms.Padding(5);
             this.textLastName.Name = "textLastName";
-            this.textLastName.Size = new System.Drawing.Size(270, 30);
+            this.textLastName.Size = new System.Drawing.Size(270, 26);
             this.textLastName.TabIndex = 6;
             this.textLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textContact
             // 
             this.textContact.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "phoneNumber", true));
-            this.textContact.Location = new System.Drawing.Point(88, 192);
-            this.textContact.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textContact.Location = new System.Drawing.Point(113, 262);
+            this.textContact.Margin = new System.Windows.Forms.Padding(5);
             this.textContact.Name = "textContact";
-            this.textContact.Size = new System.Drawing.Size(270, 30);
+            this.textContact.Size = new System.Drawing.Size(270, 26);
             this.textContact.TabIndex = 7;
             this.textContact.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textEmail
             // 
             this.textEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "email", true));
-            this.textEmail.Location = new System.Drawing.Point(88, 266);
-            this.textEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textEmail.Location = new System.Drawing.Point(113, 336);
+            this.textEmail.Margin = new System.Windows.Forms.Padding(5);
             this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(270, 30);
+            this.textEmail.Size = new System.Drawing.Size(270, 26);
             this.textEmail.TabIndex = 8;
             this.textEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(84, 316);
-            this.label6.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.label6.Location = new System.Drawing.Point(113, 385);
+            this.label6.Margin = new System.Windows.Forms.Padding(5, 20, 5, 5);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(270, 20);
             this.label6.TabIndex = 9;
@@ -165,14 +168,15 @@
             // 
             // numNights
             // 
-            this.numNights.Location = new System.Drawing.Point(88, 339);
+            this.numNights.Location = new System.Drawing.Point(113, 415);
+            this.numNights.Margin = new System.Windows.Forms.Padding(5);
             this.numNights.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numNights.Name = "numNights";
-            this.numNights.Size = new System.Drawing.Size(270, 30);
+            this.numNights.Size = new System.Drawing.Size(270, 26);
             this.numNights.TabIndex = 10;
             this.numNights.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.numNights.Value = new decimal(new int[] {
@@ -183,14 +187,15 @@
             // 
             // buttonCheckIn
             // 
-            this.buttonCheckIn.BackColor = System.Drawing.Color.Green;
+            this.buttonCheckIn.BackColor = System.Drawing.Color.Lime;
             this.buttonCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCheckIn.ForeColor = System.Drawing.Color.White;
+            this.buttonCheckIn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonCheckIn.Image = global::Hotel_Management_System.Properties.Resources._64_check;
-            this.buttonCheckIn.Location = new System.Drawing.Point(88, 396);
+            this.buttonCheckIn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonCheckIn.Location = new System.Drawing.Point(113, 488);
             this.buttonCheckIn.Name = "buttonCheckIn";
-            this.buttonCheckIn.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonCheckIn.Size = new System.Drawing.Size(132, 132);
+            this.buttonCheckIn.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            this.buttonCheckIn.Size = new System.Drawing.Size(130, 130);
             this.buttonCheckIn.TabIndex = 11;
             this.buttonCheckIn.Text = "Check In";
             this.buttonCheckIn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -201,12 +206,13 @@
             // 
             this.buttonCancel.BackColor = System.Drawing.Color.Red;
             this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancel.ForeColor = System.Drawing.Color.White;
+            this.buttonCancel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonCancel.Image = global::Hotel_Management_System.Properties.Resources._64_cross;
-            this.buttonCancel.Location = new System.Drawing.Point(226, 396);
+            this.buttonCancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonCancel.Location = new System.Drawing.Point(255, 488);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Padding = new System.Windows.Forms.Padding(5);
-            this.buttonCancel.Size = new System.Drawing.Size(132, 132);
+            this.buttonCancel.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            this.buttonCancel.Size = new System.Drawing.Size(130, 130);
             this.buttonCancel.TabIndex = 12;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -215,7 +221,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackColor = System.Drawing.SystemColors.Window;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.buttonCheckIn);
             this.panel1.Controls.Add(this.buttonCancel);
@@ -228,9 +234,10 @@
             this.panel1.Controls.Add(this.textEmail);
             this.panel1.Controls.Add(this.textFirstName);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(41, 108);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 46);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(425, 562);
+            this.panel1.Size = new System.Drawing.Size(500, 654);
             this.panel1.TabIndex = 13;
             // 
             // clientsTableAdapter
@@ -239,8 +246,9 @@
             // 
             // CheckIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(500, 700);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
