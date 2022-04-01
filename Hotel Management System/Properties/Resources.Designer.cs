@@ -143,6 +143,16 @@ namespace Hotel_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _64_angle_right {
+            get {
+                object obj = ResourceManager.GetObject("64-angle-right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _64_check {
             get {
                 object obj = ResourceManager.GetObject("_64_check", resourceCulture);
@@ -156,6 +166,16 @@ namespace Hotel_Management_System.Properties {
         internal static System.Drawing.Bitmap _64_cross {
             get {
                 object obj = ResourceManager.GetObject("_64_cross", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _64_edit {
+            get {
+                object obj = ResourceManager.GetObject("64_edit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

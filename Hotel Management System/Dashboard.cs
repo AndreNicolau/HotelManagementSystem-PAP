@@ -12,7 +12,7 @@ namespace Hotel_Management_System
 
         private void logoutButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Login login = new Login();
             login.ShowDialog();
         }

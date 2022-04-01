@@ -216,7 +216,9 @@
   <ItemGroup>
     <None Include="Resources\coloredSettings.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\64_edit.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\128px-icons\128-add.png" />
     <Resource Include="Resources\128px-icons\128-check.png" />
@@ -232,6 +234,9 @@
     <Resource Include="Resources\64px-icons\64-settings.png" />
     <Resource Include="Resources\64px-icons\64-sign-in.png" />
     <Resource Include="Resources\64px-icons\64-sign-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64-angle-right.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

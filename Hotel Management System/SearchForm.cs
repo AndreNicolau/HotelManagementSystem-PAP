@@ -54,6 +54,11 @@ namespace Hotel_Management_System
             this.clientsTableAdapter.Fill(this.hotelDbDataSet.Clients);
 
         }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
     public class Client

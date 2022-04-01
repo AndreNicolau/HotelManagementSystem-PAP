@@ -40,7 +40,12 @@ namespace Hotel_Management_System
                 MessageBox.Show(ex.Message);
             }
 
-            this.Hide();
+            this.Close();
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
