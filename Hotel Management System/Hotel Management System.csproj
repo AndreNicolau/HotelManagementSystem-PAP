@@ -50,16 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckIn.cs">
+    <Compile Include="Forms\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CheckIn.Designer.cs">
-      <DependentUpon>CheckIn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Dashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dashboard.Designer.cs">
+    <Compile Include="Forms\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
@@ -71,10 +65,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HotelDbDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -85,13 +79,22 @@
     <Compile Include="SearchForm.Designer.cs">
       <DependentUpon>SearchForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CheckIn.resx">
-      <DependentUpon>CheckIn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
+    <Compile Include="UserContols\Check In User Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserContols\Check In User Control.Designer.cs">
+      <DependentUpon>Check In User Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserContols\Check Out User Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserContols\Check Out User Control.Designer.cs">
+      <DependentUpon>Check Out User Control.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -106,6 +109,12 @@
     </Compile>
     <EmbeddedResource Include="SearchForm.resx">
       <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserContols\Check In User Control.resx">
+      <DependentUpon>Check In User Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserContols\Check Out User Control.resx">
+      <DependentUpon>Check Out User Control.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="HotelDbDataSet.xsc">
       <DependentUpon>HotelDbDataSet.xsd</DependentUpon>
@@ -133,90 +142,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\login.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logout.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\search.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coloredPlus.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blackPlus.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coloredLogout.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coloredSearch.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coloredLogin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blackEdit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coloredEdit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\edit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\001-edit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\002-login.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\003-login-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\004-edit-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\007-search.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\008-search-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\plus.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\plus %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\005-logout.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\006-logout-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blackLogin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coloredClear.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blackClear.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coloredCancel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blackCancel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blackSettings.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coloredSettings.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\64_edit.png" />
   </ItemGroup>
   <ItemGroup>
@@ -237,6 +162,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\64-angle-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64_minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

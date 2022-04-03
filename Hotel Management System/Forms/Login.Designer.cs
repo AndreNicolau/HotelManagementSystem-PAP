@@ -38,74 +38,78 @@
             this.buttonLogin = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(13, 113);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(84, 182);
             this.label1.Margin = new System.Windows.Forms.Padding(4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(374, 30);
+            this.label1.Size = new System.Drawing.Size(432, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(18, 197);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(84, 298);
             this.label2.Margin = new System.Windows.Forms.Padding(4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(369, 30);
+            this.label2.Size = new System.Drawing.Size(432, 30);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textUsername
             // 
-            this.textUsername.Location = new System.Drawing.Point(12, 151);
+            this.textUsername.Location = new System.Drawing.Point(84, 220);
             this.textUsername.Margin = new System.Windows.Forms.Padding(4);
             this.textUsername.Name = "textUsername";
-            this.textUsername.Size = new System.Drawing.Size(376, 26);
+            this.textUsername.Size = new System.Drawing.Size(432, 26);
             this.textUsername.TabIndex = 2;
+            this.textUsername.Text = "admin";
             this.textUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyDown_Event);
             // 
             // textPassword
             // 
-            this.textPassword.Location = new System.Drawing.Point(12, 235);
+            this.textPassword.Location = new System.Drawing.Point(84, 336);
             this.textPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(375, 26);
+            this.textPassword.Size = new System.Drawing.Size(432, 26);
             this.textPassword.TabIndex = 3;
+            this.textPassword.Text = "admin";
             this.textPassword.UseSystemPasswordChar = true;
             this.textPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyDown_Event);
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(84, 87);
             this.label3.Margin = new System.Windows.Forms.Padding(4);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(400, 65);
+            this.label3.Size = new System.Drawing.Size(432, 65);
             this.label3.TabIndex = 7;
             this.label3.Text = "Login";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Window;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
             this.flowLayoutPanel1.Controls.Add(this.buttonLogin);
             this.flowLayoutPanel1.Controls.Add(this.buttonClear);
             this.flowLayoutPanel1.Controls.Add(this.buttonClose);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 400);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(84, 414);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(400, 300);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(432, 300);
             this.flowLayoutPanel1.TabIndex = 8;
             // 
             // buttonLogin
@@ -145,7 +149,7 @@
             this.buttonClose.BackColor = System.Drawing.Color.Red;
             this.buttonClose.Image = ((System.Drawing.Image)(resources.GetObject("buttonClose.Image")));
             this.buttonClose.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonClose.Location = new System.Drawing.Point(10, 150);
+            this.buttonClose.Location = new System.Drawing.Point(290, 10);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(5);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
@@ -156,27 +160,44 @@
             this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
+            // panel1
+            // 
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(53)))));
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.flowLayoutPanel1);
+            this.panel1.Controls.Add(this.textUsername);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.textPassword);
+            this.panel1.Location = new System.Drawing.Point(674, 157);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(600, 800);
+            this.panel1.TabIndex = 9;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(400, 700);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textPassword);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textUsername);
+            this.BackgroundImage = global::Hotel_Management_System.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Login_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -191,5 +212,6 @@
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

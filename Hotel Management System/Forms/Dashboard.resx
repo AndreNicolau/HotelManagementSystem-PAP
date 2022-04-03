@@ -117,59 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="128_sign_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\128px-icons\128-sign-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnLogout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
+        1wAAAdcBjJIIaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMlSURBVHhe5ZvJ
+        zkxBGIbbsBOxQAxX8HMHhrVYEwR/DAvEtLPDxgUYY4r4WQgxJBKxIG7Ahoh5xUIkhgUxbBA8byctnfJ2
+        n6Gb9FfnTZ5N16lKfe+p6VRXtUpoFmyCK/AQ3sAvww94DMshC82HM/AdXMC9+AyzIbS2w1dwAZYhbCuY
+        CifABVWFBRBSx8EFVIVDEFJq9i6gDi/gMOyEVYYVMAYhpQGvV59/BWtgEmQrjfYu+HswD7KW5nk31enN
+        z4XstRnS4IWafSN0DdLgNeBl3ee79QBSA45AY/QeUgM0JTZGPyE1YDVE0Eo4D/tgmn6oozR4oYXNqGsP
+        dNdZX6JzoLK6C+kw6gZogHZd9wlUNiEtRERoAR/A1b2yCa6QCAbsB1d3UckEV0AEA9QNToKrv3gOpZbx
+        LnMEA6ShmOAyRjFAGtgElymSAdJAJrgM0QyQapvgHo5ogFTLBPdgVAOkyXAWXFxCK8YZ8EfuocgGSEUt
+        4TZMgbbcA9ENkIpawm5oyyXmYIDUryW8g+lgE3MxQFJLuA4uznGwCWUMWAzHQH+a1uUG3PkP3AUX5yWw
+        CUUGLAX9G+zyRuIZ2IQiAybA5YvGR7AJRQb0G10joT0Fm1BkwBKoem5gFHkKNqHMILgIjoIb3Kqggej0
+        P+YquDgvgk0oY0AUaRq8CS7O9WATcjFAwWvb3MX4FrJeCCn4c+DiEzrn0JZLjG5AvzcvbkG2H0NFb15H
+        /bL9HC5681r5/XXmwT0Y0YBawUvu4WgG1A5echkiGTBQ8JLLFMWAgYOXXMYIBgwleMlljmDAAXB1F4+g
+        9IFtV8CoG6C3/wlc3Uu/+Y5cIaNugFZx7mRr5eCltBARoQschO46a4VX655C1ENS6gZb4ALshdqHpLQ/
+        nhqwAxqjxh+UdNtFjToquxFSA8RaaIRmgtvhfQ26SNEIaec0NUDch0aYoFMTX8CZoJawDjTtZK1t4Azo
+        8BL0P8Au0EIpRZemFkJo6d9eF3wVQk+hujg5DBPCt4St0GtMKEMWF6g1MJ6Cb+CC7IU+U3UTLRtpnbAB
+        LoOWzf2uz2sjYhkEUav1G3hfpoxgJEfKAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="128_cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\128px-icons\128-cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="128_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\128px-icons\128-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="64_sign_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\64px-icons\64-sign-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="128_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\128px-icons\128-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="64_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\64px-icons\64-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="64_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\64px-icons\64-settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="64_cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\64px-icons\64-cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="64_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\64px-icons\64-search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="64_sign_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\64px-icons\64-sign-in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="128_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\128px-icons\128-search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="128_check" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\128px-icons\128-check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="64_check" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\64px-icons\64-check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="128_sign_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\128px-icons\128-sign-in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="64_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\64_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="64-angle-right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\64-angle-right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_64_minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\64_minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="clientsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>182, 17</value>
+  </metadata>
+  <metadata name="hotelDbDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="hotelDbDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="clientsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>380, 17</value>
+  </metadata>
+  <metadata name="hotelDbDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>567, 17</value>
+  </metadata>
 </root>

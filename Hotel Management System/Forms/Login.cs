@@ -55,5 +55,10 @@ namespace Hotel_Management_System
             if (e.KeyCode == Keys.Enter)
                 buttonLogin_Click(sender, e);
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
