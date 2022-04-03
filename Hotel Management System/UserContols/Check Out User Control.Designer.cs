@@ -31,18 +31,16 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hotelDbDataSet = new Hotel_Management_System.HotelDbDataSet();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clientsTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.ClientsTableAdapter();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hotelDbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hotelDbDataSet = new Hotel_Management_System.HotelDbDataSet();
-            this.clientsTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.ClientsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -57,30 +55,45 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lastNameDataGridViewTextBoxColumn,
             this.firstNameDataGridViewTextBoxColumn,
+            this.lastNameDataGridViewTextBoxColumn,
             this.phoneNumberDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.clientsBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(10, 40);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(492, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(564, 150);
             this.dataGridView1.TabIndex = 1;
             // 
-            // lastNameDataGridViewTextBoxColumn
+            // hotelDbDataSet
             // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "lastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "lastName";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            this.hotelDbDataSet.DataSetName = "HotelDbDataSet";
+            this.hotelDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "Clients";
+            this.clientsBindingSource.DataSource = this.hotelDbDataSet;
+            // 
+            // clientsTableAdapter
+            // 
+            this.clientsTableAdapter.ClearBeforeFill = true;
             // 
             // firstNameDataGridViewTextBoxColumn
             // 
             this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "firstName";
             this.firstNameDataGridViewTextBoxColumn.HeaderText = "firstName";
             this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "lastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "lastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
             // 
             // phoneNumberDataGridViewTextBoxColumn
             // 
@@ -94,25 +107,6 @@
             this.emailDataGridViewTextBoxColumn.HeaderText = "email";
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             // 
-            // clientsBindingSource
-            // 
-            this.clientsBindingSource.DataMember = "Clients";
-            this.clientsBindingSource.DataSource = this.hotelDbDataSetBindingSource;
-            // 
-            // hotelDbDataSetBindingSource
-            // 
-            this.hotelDbDataSetBindingSource.DataSource = this.hotelDbDataSet;
-            this.hotelDbDataSetBindingSource.Position = 0;
-            // 
-            // hotelDbDataSet
-            // 
-            this.hotelDbDataSet.DataSetName = "HotelDbDataSet";
-            this.hotelDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientsTableAdapter
-            // 
-            this.clientsTableAdapter.ClearBeforeFill = true;
-            // 
             // Check_Out_User_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -125,10 +119,10 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Check_Out_User_Control";
             this.Size = new System.Drawing.Size(1754, 995);
+            this.Load += new System.EventHandler(this.Check_Out_User_Control_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,12 +132,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource clientsBindingSource;
-        private System.Windows.Forms.BindingSource hotelDbDataSetBindingSource;
         private HotelDbDataSet hotelDbDataSet;
         private HotelDbDataSetTableAdapters.ClientsTableAdapter clientsTableAdapter;
     }

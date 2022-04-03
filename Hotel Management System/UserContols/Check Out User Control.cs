@@ -16,5 +16,10 @@ namespace Hotel_Management_System.UserContols
         {
             InitializeComponent();
         }
+
+        private void Check_Out_User_Control_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = clientsTableAdapter.GetData();
+        }
     }
 }
