@@ -28,48 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchForm));
             this.textLastName = new System.Windows.Forms.TextBox();
-            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hotelDbDataSet = new Hotel_Management_System.HotelDbDataSet();
-            this.clientsTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.ClientsTableAdapter();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
             this.searchButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.clientsTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.ClientsTableAdapter();
+            this.hotelDbDataSet = new Hotel_Management_System.HotelDbDataSet();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // textLastName
             // 
-            this.textLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "lastName", true));
             this.textLastName.Location = new System.Drawing.Point(158, 400);
             this.textLastName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textLastName.Name = "textLastName";
             this.textLastName.Size = new System.Drawing.Size(437, 26);
             this.textLastName.TabIndex = 2;
             this.textLastName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textLastName_KeyDown);
-            // 
-            // clientsBindingSource
-            // 
-            this.clientsBindingSource.DataMember = "Clients";
-            this.clientsBindingSource.DataSource = this.hotelDbDataSet;
-            // 
-            // hotelDbDataSet
-            // 
-            this.hotelDbDataSet.DataSetName = "HotelDbDataSet";
-            this.hotelDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientsTableAdapter
-            // 
-            this.clientsTableAdapter.ClearBeforeFill = true;
             // 
             // listBox1
             // 
@@ -102,18 +84,6 @@
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(3);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(150, 629);
             this.flowLayoutPanel1.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.Menu;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(150, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(770, 46);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Clients";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // searchButton
             // 
@@ -177,6 +147,27 @@
             this.cancelButton.UseVisualStyleBackColor = false;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.Menu;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(150, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(770, 46);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Clients";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // clientsTableAdapter
+            // 
+            this.clientsTableAdapter.ClearBeforeFill = true;
+            // 
+            // hotelDbDataSet
+            // 
+            this.hotelDbDataSet.DataSetName = "HotelDbDataSet";
+            this.hotelDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // SearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -194,9 +185,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "SearchForm";
             this.Load += new System.EventHandler(this.SearchForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,9 +196,6 @@
 
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.TextBox textLastName;
-        private HotelDbDataSet hotelDbDataSet;
-        private System.Windows.Forms.BindingSource clientsBindingSource;
-        private HotelDbDataSetTableAdapters.ClientsTableAdapter clientsTableAdapter;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
@@ -216,5 +203,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Label label2;
+        private HotelDbDataSetTableAdapters.ClientsTableAdapter clientsTableAdapter;
+        private HotelDbDataSet hotelDbDataSet;
     }
 }
