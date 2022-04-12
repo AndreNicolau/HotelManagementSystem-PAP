@@ -31,7 +31,7 @@ namespace Hotel_Management_System
         {
             using (SqlConnection connection = new SqlConnection(Helper.ConnectionVal("HotelDb")))
             {
-                clientsTableAdapter.FillByLastName(hotelDbDataSet.Clients, lastName);
+                //clientsTableAdapter.FillByLastName(hotelDbDataSet.Clients, lastName);
                 var output = connection.Query<Client>("dbo.selectByLastName @lastName", new { lastName = lastName}).ToList();
                 return output;
             }

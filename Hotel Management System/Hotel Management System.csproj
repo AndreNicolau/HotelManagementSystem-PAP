@@ -63,6 +63,9 @@
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="HotelDbDataSet.cs">
+      <DependentUpon>HotelDbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="HotelDbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -88,6 +91,12 @@
     <Compile Include="UserContols\Check Out User Control.Designer.cs">
       <DependentUpon>Check Out User Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserContols\Search User Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserContols\Search User Control.Designer.cs">
+      <DependentUpon>Search User Control.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserContols\Check Out User Control.resx">
       <DependentUpon>Check Out User Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserContols\Search User Control.resx">
+      <DependentUpon>Search User Control.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="HotelDbDataSet.xsc">
       <DependentUpon>HotelDbDataSet.xsd</DependentUpon>

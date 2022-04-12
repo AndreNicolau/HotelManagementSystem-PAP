@@ -1710,7 +1710,7 @@ SELECT ID, FirstName, LastName, PhoneNumber, Email FROM Clients WHERE (ID = @ID)
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT        LastName\r\nFROM            Clients";
+            this._commandCollection[1].CommandText = "SELECT        LastName AS lastName\r\nFROM            Clients";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
