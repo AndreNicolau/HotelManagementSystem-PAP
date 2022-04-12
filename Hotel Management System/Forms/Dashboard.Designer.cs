@@ -38,11 +38,12 @@
             this.clientsTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.ClientsTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.check_In_User_Control1 = new Hotel_Management_System.UserContols.Check_In_User_Control();
             this.hotelDbDataSet1 = new Hotel_Management_System.HotelDbDataSet();
             this.rdoSearch = new System.Windows.Forms.RadioButton();
             this.headerPanel = new System.Windows.Forms.Panel();
+            this.search_User_Control1 = new Hotel_Management_System.UserContols.Search_User_Control();
             this.check_Out_User_Control1 = new Hotel_Management_System.UserContols.Check_Out_User_Control();
+            this.check_In_User_Control1 = new Hotel_Management_System.UserContols.Check_In_User_Control();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
             this.mainPanel.SuspendLayout();
@@ -138,24 +139,14 @@
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(83)))), ((int)(((byte)(99)))));
-            this.mainPanel.Controls.Add(this.check_Out_User_Control1);
             this.mainPanel.Controls.Add(this.check_In_User_Control1);
+            this.mainPanel.Controls.Add(this.search_User_Control1);
+            this.mainPanel.Controls.Add(this.check_Out_User_Control1);
             this.mainPanel.Location = new System.Drawing.Point(9, 207);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(5);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(1886, 820);
             this.mainPanel.TabIndex = 8;
-            // 
-            // check_In_User_Control1
-            // 
-            this.check_In_User_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
-            this.check_In_User_Control1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check_In_User_Control1.ForeColor = System.Drawing.Color.White;
-            this.check_In_User_Control1.Location = new System.Drawing.Point(33, 39);
-            this.check_In_User_Control1.Margin = new System.Windows.Forms.Padding(0);
-            this.check_In_User_Control1.Name = "check_In_User_Control1";
-            this.check_In_User_Control1.Size = new System.Drawing.Size(200, 200);
-            this.check_In_User_Control1.TabIndex = 0;
             // 
             // hotelDbDataSet1
             // 
@@ -178,6 +169,7 @@
             this.rdoSearch.Text = "Search";
             this.rdoSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.rdoSearch.UseVisualStyleBackColor = false;
+            this.rdoSearch.CheckedChanged += new System.EventHandler(this.rdoSearch_CheckedChanged);
             // 
             // headerPanel
             // 
@@ -193,6 +185,16 @@
             this.headerPanel.Size = new System.Drawing.Size(1886, 193);
             this.headerPanel.TabIndex = 9;
             // 
+            // search_User_Control1
+            // 
+            this.search_User_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
+            this.search_User_Control1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_User_Control1.Location = new System.Drawing.Point(237, 39);
+            this.search_User_Control1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.search_User_Control1.Name = "search_User_Control1";
+            this.search_User_Control1.Size = new System.Drawing.Size(200, 200);
+            this.search_User_Control1.TabIndex = 2;
+            // 
             // check_Out_User_Control1
             // 
             this.check_Out_User_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
@@ -203,6 +205,17 @@
             this.check_Out_User_Control1.Name = "check_Out_User_Control1";
             this.check_Out_User_Control1.Size = new System.Drawing.Size(200, 200);
             this.check_Out_User_Control1.TabIndex = 1;
+            // 
+            // check_In_User_Control1
+            // 
+            this.check_In_User_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
+            this.check_In_User_Control1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check_In_User_Control1.ForeColor = System.Drawing.Color.White;
+            this.check_In_User_Control1.Location = new System.Drawing.Point(33, 39);
+            this.check_In_User_Control1.Margin = new System.Windows.Forms.Padding(0);
+            this.check_In_User_Control1.Name = "check_In_User_Control1";
+            this.check_In_User_Control1.Size = new System.Drawing.Size(200, 200);
+            this.check_In_User_Control1.TabIndex = 3;
             // 
             // Dashboard
             // 
@@ -242,8 +255,9 @@
         private System.Windows.Forms.RadioButton rdoCheckIn;
         private System.Windows.Forms.RadioButton rdoSearch;
         private System.Windows.Forms.Panel headerPanel;
-        private UserContols.Check_In_User_Control check_In_User_Control1;
         private UserContols.Check_Out_User_Control check_Out_User_Control1;
+        private UserContols.Search_User_Control search_User_Control1;
+        private UserContols.Check_In_User_Control check_In_User_Control1;
     }
 }
 

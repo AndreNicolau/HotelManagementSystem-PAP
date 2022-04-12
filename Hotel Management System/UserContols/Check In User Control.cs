@@ -15,6 +15,26 @@ namespace Hotel_Management_System.UserContols
         public Check_In_User_Control()
         {
             InitializeComponent();
+            ClearAll();
+        }
+
+        private void buttonCheckIn_Click(object sender, EventArgs e)
+        {
+            clientsTableAdapter.InsertQuery(textFirstName.Text, textLastName.Text, textPhoneNumber.Text, textEmail.Text);
+            buttonCancel.PerformClick();
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            ClearAll();
+        }
+
+        private void ClearAll()
+        {
+            textFirstName.Clear();
+            textLastName.Clear();
+            textPhoneNumber.Clear();
+            textEmail.Clear();
         }
     }
 }

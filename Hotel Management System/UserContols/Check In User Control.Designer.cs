@@ -39,6 +39,7 @@
             this.buttonCheckIn = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.clientsTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.ClientsTableAdapter();
             this.SuspendLayout();
             // 
             // label1
@@ -132,6 +133,7 @@
             this.buttonCheckIn.Text = "Check In";
             this.buttonCheckIn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonCheckIn.UseVisualStyleBackColor = false;
+            this.buttonCheckIn.Click += new System.EventHandler(this.buttonCheckIn_Click);
             // 
             // buttonCancel
             // 
@@ -148,6 +150,7 @@
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // label5
             // 
@@ -158,6 +161,10 @@
             this.label5.Size = new System.Drawing.Size(150, 37);
             this.label5.TabIndex = 14;
             this.label5.Text = "Check In";
+            // 
+            // clientsTableAdapter
+            // 
+            this.clientsTableAdapter.ClearBeforeFill = true;
             // 
             // Check_In_User_Control
             // 
@@ -198,5 +205,6 @@
         private System.Windows.Forms.Button buttonCheckIn;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Label label5;
+        private HotelDbDataSetTableAdapters.ClientsTableAdapter clientsTableAdapter;
     }
 }
