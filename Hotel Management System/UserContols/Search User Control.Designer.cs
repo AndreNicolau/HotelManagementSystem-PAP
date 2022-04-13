@@ -77,7 +77,7 @@
             this.dataGridView1.DataSource = this.clientsBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(10, 40);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(550, 200);
+            this.dataGridView1.Size = new System.Drawing.Size(650, 200);
             this.dataGridView1.TabIndex = 1;
             // 
             // clientsBindingSource
