@@ -39,7 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.check_In_User_Control1 = new Hotel_Management_System.UserContols.Check_In_User_Control();
-            this.check_Out_User_Control1 = new Hotel_Management_System.UserContols.Check_Out_User_Control();
+            //this.check_Out_User_Control1 = new Hotel_Management_System.UserContols.Check_Out_User_Control();
             this.hotelDbDataSet1 = new Hotel_Management_System.HotelDbDataSet();
             this.rdoSearch = new System.Windows.Forms.RadioButton();
             this.headerPanel = new System.Windows.Forms.Panel();
@@ -141,7 +141,6 @@
             this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(83)))), ((int)(((byte)(99)))));
             this.mainPanel.Controls.Add(this.search_User_Control1);
             this.mainPanel.Controls.Add(this.check_In_User_Control1);
-            this.mainPanel.Controls.Add(this.check_Out_User_Control1);
             this.mainPanel.Location = new System.Drawing.Point(9, 207);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(5);
             this.mainPanel.Name = "mainPanel";
@@ -158,17 +157,7 @@
             this.check_In_User_Control1.Name = "check_In_User_Control1";
             this.check_In_User_Control1.Size = new System.Drawing.Size(200, 200);
             this.check_In_User_Control1.TabIndex = 3;
-            // 
-            // check_Out_User_Control1
-            // 
-            this.check_Out_User_Control1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
-            this.check_Out_User_Control1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check_Out_User_Control1.ForeColor = System.Drawing.Color.White;
-            this.check_Out_User_Control1.Location = new System.Drawing.Point(33, 244);
-            this.check_Out_User_Control1.Margin = new System.Windows.Forms.Padding(0);
-            this.check_Out_User_Control1.Name = "check_Out_User_Control1";
-            this.check_Out_User_Control1.Size = new System.Drawing.Size(200, 200);
-            this.check_Out_User_Control1.TabIndex = 1;
+
             // 
             // hotelDbDataSet1
             // 
