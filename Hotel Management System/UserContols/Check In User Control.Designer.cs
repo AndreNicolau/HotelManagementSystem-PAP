@@ -108,6 +108,7 @@
             this.textPhoneNumber.Size = new System.Drawing.Size(270, 26);
             this.textPhoneNumber.TabIndex = 8;
             this.textPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textPhoneNumber.Leave += new System.EventHandler(this.textPhoneNumber_Leave);
             // 
             // textEmail
             // 

@@ -36,5 +36,14 @@ namespace Hotel_Management_System.UserContols
             textPhoneNumber.Clear();
             textEmail.Clear();
         }
+
+        private void textPhoneNumber_Leave(object sender, EventArgs e)
+        {
+            if (textPhoneNumber.Text.Length < 9 || textPhoneNumber.Text.Length > 12)
+            {
+                MessageBox.Show("Invalid Phone Number");
+                textPhoneNumber.Focus();
+            }
+        }
     }
 }
