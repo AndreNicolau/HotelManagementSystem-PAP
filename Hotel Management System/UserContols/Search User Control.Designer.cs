@@ -47,8 +47,8 @@
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnCheckOut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
@@ -59,7 +59,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(901, 0);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 37);
             this.label1.TabIndex = 0;
@@ -67,6 +67,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -215,33 +216,33 @@
             this.txtEmail.Size = new System.Drawing.Size(240, 26);
             this.txtEmail.TabIndex = 10;
             // 
-            // btnEdit
+            // btnUpdate
             // 
-            this.btnEdit.Enabled = false;
-            this.btnEdit.Location = new System.Drawing.Point(842, 546);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(240, 27);
-            this.btnEdit.TabIndex = 11;
-            this.btnEdit.Text = "Edit Info";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnUpdate.Enabled = false;
+            this.btnUpdate.Location = new System.Drawing.Point(842, 546);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(240, 27);
+            this.btnUpdate.TabIndex = 11;
+            this.btnUpdate.Text = "Update Info";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnCheckOut
             // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(842, 579);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(240, 27);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Check Out";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Enabled = false;
+            this.btnCheckOut.Location = new System.Drawing.Point(842, 579);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(240, 27);
+            this.btnCheckOut.TabIndex = 12;
+            this.btnCheckOut.Text = "Check Out";
+            this.btnCheckOut.UseVisualStyleBackColor = true;
             // 
             // Search_User_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnCheckOut);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtPhoneNumber);
@@ -281,11 +282,11 @@
         private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCheckOut;
     }
 }
