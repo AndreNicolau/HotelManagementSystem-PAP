@@ -41,6 +41,7 @@ namespace Hotel_Management_System.UserContols
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
             clientsTableAdapter.DeleteByLastName(txtLastName.Text);
+            dataGridView1.DataSource=clientsTableAdapter.GetDataByLastName(txtLastName.Text);
             ClearTextBoxes();
             CheckEditable(false);
         }
@@ -75,6 +76,14 @@ namespace Hotel_Management_System.UserContols
 
                 btnCheckOut.Enabled = false;
                 btnUpdate.Enabled = false;
+            }
+        }
+
+        private void txtLastName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSearch.PerformClick();
             }
         }
     }

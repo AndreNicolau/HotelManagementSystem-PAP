@@ -90,6 +90,7 @@
             this.textFirstName.Size = new System.Drawing.Size(270, 26);
             this.textFirstName.TabIndex = 6;
             this.textFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textFirstName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoCheckIn);
             // 
             // textLastName
             // 
@@ -99,6 +100,7 @@
             this.textLastName.Size = new System.Drawing.Size(270, 26);
             this.textLastName.TabIndex = 7;
             this.textLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textLastName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoCheckIn);
             // 
             // textPhoneNumber
             // 
@@ -108,6 +110,7 @@
             this.textPhoneNumber.Size = new System.Drawing.Size(270, 26);
             this.textPhoneNumber.TabIndex = 8;
             this.textPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textPhoneNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoCheckIn);
             this.textPhoneNumber.Leave += new System.EventHandler(this.textPhoneNumber_Leave);
             // 
             // textEmail
@@ -118,6 +121,7 @@
             this.textEmail.Size = new System.Drawing.Size(270, 26);
             this.textEmail.TabIndex = 9;
             this.textEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textEmail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoCheckIn);
             // 
             // buttonCheckIn
             // 

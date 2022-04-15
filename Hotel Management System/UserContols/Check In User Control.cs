@@ -45,5 +45,13 @@ namespace Hotel_Management_System.UserContols
                 textPhoneNumber.Focus();
             }
         }
+
+        private void DoCheckIn(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonCheckIn.PerformClick();
+            }
+        }
     }
 }

@@ -130,6 +130,7 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(240, 26);
             this.txtLastName.TabIndex = 2;
+            this.txtLastName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLastName_KeyDown);
             // 
             // btnSearch
             // 
