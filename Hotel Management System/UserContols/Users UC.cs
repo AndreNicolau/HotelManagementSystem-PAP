@@ -20,6 +20,32 @@ namespace Hotel_Management_System.UserContols
                 usersBindingSource.DataSource = dataGridView1.DataSource;
             }
 
+            if (dataGridView1.Rows != null && dataGridView1.Rows.Count != 0)
+            {
+                CheckEditable(true);
+            } else
+            {
+                CheckEditable(false);
+            }
+
+        }
+
+        private void CheckEditable(bool editable)
+        {
+            if (editable)
+            {
+                txtPassword.Enabled = true;
+
+                btnRemoveUser.Enabled = true;
+                btnUpdate.Enabled = true;
+            }
+            else
+            {
+                txtPassword.Enabled = false;
+
+                btnRemoveUser.Enabled = false;
+                btnUpdate.Enabled = false;
+            }
         }
     }
 }

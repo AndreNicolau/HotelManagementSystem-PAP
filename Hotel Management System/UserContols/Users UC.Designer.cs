@@ -31,24 +31,24 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.hotelDbDataSet = new Hotel_Management_System.HotelDbDataSet();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.usersTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.UsersTableAdapter();
-            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.usersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnRemoveUser = new System.Windows.Forms.Button();
+            this.btnNewUser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,6 +79,23 @@
             this.dataGridView1.Size = new System.Drawing.Size(1295, 200);
             this.dataGridView1.TabIndex = 1;
             // 
+            // usernameDataGridViewTextBoxColumn
+            // 
+            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "Username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "Username";
+            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            // 
+            // usersBindingSource1
+            // 
+            this.usersBindingSource1.DataMember = "Users";
+            this.usersBindingSource1.DataSource = this.hotelDbDataSet;
+            // 
             // hotelDbDataSet
             // 
             this.hotelDbDataSet.DataSetName = "HotelDbDataSet";
@@ -92,18 +109,6 @@
             // usersTableAdapter
             // 
             this.usersTableAdapter.ClearBeforeFill = true;
-            // 
-            // usernameDataGridViewTextBoxColumn
-            // 
-            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "Username";
-            this.usernameDataGridViewTextBoxColumn.HeaderText = "Username";
-            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
             // 
             // txtUsername
             // 
@@ -164,38 +169,33 @@
             this.btnUpdate.Text = "Update Info";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnRemoveUser
             // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(842, 588);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(240, 27);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Remove User";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRemoveUser.Enabled = false;
+            this.btnRemoveUser.Location = new System.Drawing.Point(842, 588);
+            this.btnRemoveUser.Name = "btnRemoveUser";
+            this.btnRemoveUser.Size = new System.Drawing.Size(240, 27);
+            this.btnRemoveUser.TabIndex = 13;
+            this.btnRemoveUser.Text = "Remove User";
+            this.btnRemoveUser.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnNewUser
             // 
-            this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(842, 621);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(240, 27);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "New User";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // usersBindingSource1
-            // 
-            this.usersBindingSource1.DataMember = "Users";
-            this.usersBindingSource1.DataSource = this.hotelDbDataSet;
+            this.btnNewUser.Enabled = false;
+            this.btnNewUser.Location = new System.Drawing.Point(842, 621);
+            this.btnNewUser.Name = "btnNewUser";
+            this.btnNewUser.Size = new System.Drawing.Size(240, 27);
+            this.btnNewUser.TabIndex = 14;
+            this.btnNewUser.Text = "New User";
+            this.btnNewUser.UseVisualStyleBackColor = true;
             // 
             // Users_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnNewUser);
+            this.Controls.Add(this.btnRemoveUser);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -209,9 +209,9 @@
             this.Name = "Users_UC";
             this.Size = new System.Drawing.Size(1920, 1080);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,8 +232,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnRemoveUser;
+        private System.Windows.Forms.Button btnNewUser;
         private System.Windows.Forms.BindingSource usersBindingSource1;
     }
 }
