@@ -28,9 +28,7 @@ C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management Sys
 C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.Dashboard.resources
 C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.Login.resources
 C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.Properties.Resources.resources
-C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.SearchForm.resources
 C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.UserContols.Check_In_User_Control.resources
-C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.UserContols.Check_Out_User_Control.resources
 C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel Management System.csproj.GenerateResource.cache
 C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel Management System.csproj.CoreCompileInputs.cache
 C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel Management System.csproj.CopyComplete

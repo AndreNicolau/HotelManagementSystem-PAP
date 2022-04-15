@@ -25,31 +25,7 @@ namespace Hotel_Management_System
             this.clientsTableAdapter.Fill(this.hotelDbDataSet.Clients);
 
             check_In_User_Control1.Visible = false;
-            check_Out_User_Control1.Visible = false;
             search_User_Control1.Visible = false;
-        }
-
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            SearchForm searchForm = new SearchForm();
-            searchForm.ShowDialog();
-        }
-
-        private void rdoCheckOut_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rdoCheckOut.Checked)
-            {
-                check_Out_User_Control1.Dock = DockStyle.Fill;
-                check_Out_User_Control1.Visible = true;
-
-                rdoCheckOut.BackColor = System.Drawing.Color.White;
-            }
-            else
-            {
-                check_Out_User_Control1.Visible = false;
-                rdoCheckOut.BackColor = rdoColor;
-            }
-
         }
 
         private void rdoCheckIn_CheckedChanged(object sender, EventArgs e)
