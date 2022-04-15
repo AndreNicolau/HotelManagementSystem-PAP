@@ -38,7 +38,6 @@
             this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hotelDbDataSet = new Hotel_Management_System.HotelDbDataSet();
             this.txtLastName = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.clientsTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.ClientsTableAdapter();
             this.label3 = new System.Windows.Forms.Label();
@@ -130,17 +129,7 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(240, 26);
             this.txtLastName.TabIndex = 2;
-            this.txtLastName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLastName_KeyDown);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(842, 513);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(240, 27);
-            this.btnSearch.TabIndex = 3;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.txtLastName.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
             // 
             // label2
             // 
@@ -253,7 +242,6 @@
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
@@ -274,7 +262,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label2;
         private HotelDbDataSetTableAdapters.ClientsTableAdapter clientsTableAdapter;
         private System.Windows.Forms.BindingSource clientsBindingSource;

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Hotel_Management_System.UserContols
@@ -9,25 +8,8 @@ namespace Hotel_Management_System.UserContols
         public Search_User_Control()
         {
             InitializeComponent();
-        }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            using (SqlConnection conn = new SqlConnection(Helper.ConnectionVal("HotelDb")))
-            {
-                conn.Open();
-                dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
-                clientsBindingSource.DataSource = dataGridView1.DataSource;
-            }
-
-            if (dataGridView1.Rows != null && dataGridView1.Rows.Count != 0)
-            {
-                CheckEditable(true);
-            }
-            else
-            {
-                CheckEditable(false);
-            }
+            dataGridView1.DataSource = clientsTableAdapter.GetData();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -79,12 +61,9 @@ namespace Hotel_Management_System.UserContols
             }
         }
 
-        private void txtLastName_KeyDown(object sender, KeyEventArgs e)
+        private void txtLastName_TextChanged(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnSearch.PerformClick();
-            }
+            dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
         }
     }
 }
