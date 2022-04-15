@@ -225,6 +225,7 @@
             this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Update Info";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnCheckOut
             // 
@@ -235,6 +236,7 @@
             this.btnCheckOut.TabIndex = 12;
             this.btnCheckOut.Text = "Check Out";
             this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // Search_User_Control
             // 

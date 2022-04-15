@@ -21,7 +21,7 @@ namespace Hotel_Management_System.UserContols
         private void buttonCheckIn_Click(object sender, EventArgs e)
         {
             clientsTableAdapter.InsertQuery(textFirstName.Text, textLastName.Text, textPhoneNumber.Text, textEmail.Text);
-            buttonCancel.PerformClick();
+            ClearAll();
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
