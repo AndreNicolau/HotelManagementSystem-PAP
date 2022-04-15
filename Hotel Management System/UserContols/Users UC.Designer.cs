@@ -78,6 +78,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1295, 200);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // usernameDataGridViewTextBoxColumn
             // 
@@ -118,6 +119,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(240, 26);
             this.txtUsername.TabIndex = 2;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtPassword
             // 
@@ -168,6 +170,7 @@
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Update Info";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnRemoveUser
             // 
@@ -178,6 +181,7 @@
             this.btnRemoveUser.TabIndex = 13;
             this.btnRemoveUser.Text = "Remove User";
             this.btnRemoveUser.UseVisualStyleBackColor = true;
+            this.btnRemoveUser.Click += new System.EventHandler(this.btnRemoveUser_Click);
             // 
             // btnNewUser
             // 
@@ -188,6 +192,7 @@
             this.btnNewUser.TabIndex = 14;
             this.btnNewUser.Text = "New User";
             this.btnNewUser.UseVisualStyleBackColor = true;
+            this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
             // 
             // Users_UC
             // 
