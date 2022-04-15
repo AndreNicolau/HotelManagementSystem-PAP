@@ -9,45 +9,83 @@ namespace Hotel_Management_System.UserContols
         public Users_UC()
         {
             InitializeComponent();
+
+            dataGridView1.DataSource = usersTableAdapter.GetData();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            using (SqlConnection conn = new SqlConnection(Helper.ConnectionVal("HotelDb")))
-            {
-                conn.Open();
-                dataGridView1.DataSource = usersTableAdapter.GetDataByUsername(txtUsername.Text);
-                usersBindingSource.DataSource = dataGridView1.DataSource;
-            }
+        #region private classes
 
-            if (dataGridView1.Rows != null && dataGridView1.Rows.Count != 0)
+        private bool CanEdit()
+        {
+            if (dataGridView1.Rows.Count > 0)
             {
-                CheckEditable(true);
+                btnUpdate.Enabled = true;
+                btnRemoveUser.Enabled = true;
+                txtPassword.Enabled = true;
+
+                usersBindingSource.DataSource = dataGridView1.DataSource;
+
+                return true;
             }
             else
             {
-                CheckEditable(false);
+                btnUpdate.Enabled = false;
+                btnRemoveUser.Enabled = false;
+                txtPassword.Enabled = false;
+                txtPassword.Clear();
+                return false;
             }
-
         }
 
-        private void CheckEditable(bool editable)
+        private bool CanInsertNewUser()
         {
-            if (editable)
+            if (dataGridView1.Rows.Count == 0 && txtUsername.Text != "")
             {
                 txtPassword.Enabled = true;
 
-                btnRemoveUser.Enabled = true;
-                btnUpdate.Enabled = true;
+                if (txtPassword.Text != "")
+                {
+                    btnNewUser.Enabled = true;
+                    return true;
+                }
+                else
+                {
+                    btnNewUser.Enabled = false;
+                    return false;
+                }
+
             }
             else
             {
                 txtPassword.Enabled = false;
-
-                btnRemoveUser.Enabled = false;
-                btnUpdate.Enabled = false;
+                btnNewUser.Enabled = false;
+                return false;
             }
         }
+
+        private void InsertNewUser()
+        {
+            if (CanInsertNewUser())
+            {
+                using (SqlConnection conn = new SqlConnection(Helper.ConnectionVal("HotelDb")))
+                {
+                    try
+                    {
+                        conn.Open();
+                        usersTableAdapter.InsertUser(txtUsername.Text, txtPassword.Text);
+                        dataGridView1.DataSource = usersTableAdapter.GetData();
+                    }
+                    catch (SqlException ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+        }
+
+        #endregion
+
+
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -68,49 +106,29 @@ namespace Hotel_Management_System.UserContols
 
         private void btnNewUser_Click(object sender, EventArgs e)
         {
-            if (txtPassword.Text != "" && txtUsername.Text != "")
-            {
-                using (SqlConnection conn = new SqlConnection(Helper.ConnectionVal("HotelDb")))
-                {
-                    try
-                    {
-                        conn.Open();
-                        usersTableAdapter.InsertUser(txtUsername.Text, txtPassword.Text);
-                        dataGridView1.DataSource = usersTableAdapter.GetData();
-                        btnNewUser.Enabled = false;
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please enter username and password.");
-            }
+            InsertNewUser();
+            txtUsername.Clear();
+            txtPassword.Clear();
+
+            dataGridView1.DataSource = usersTableAdapter.GetData();
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
-            if (txtUsername.Text != "")
+            dataGridView1.DataSource = usersTableAdapter.GetDataByUsername(txtUsername.Text);
+
+            if (!CanEdit())
             {
-                txtPassword.Enabled = true;
-                btnNewUser.Enabled = true;
+                CanInsertNewUser();
             }
-            else
-            {
-                txtPassword.Enabled = false;
-                btnNewUser.Enabled = false;
-            }
+
+            if (txtUsername.Text == "")
+                dataGridView1.DataSource = usersTableAdapter.GetData();
         }
 
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        private void txtPassword_TextChanged(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                usersBindingSource.DataSource = dataGridView1.SelectedRows;
-            }
+            CanInsertNewUser();
         }
     }
 }
