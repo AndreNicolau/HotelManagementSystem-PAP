@@ -85,8 +85,6 @@ namespace Hotel_Management_System.UserContols
 
         #endregion
 
-
-
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             usersTableAdapter.UpdateByUsername(txtUsername.Text, txtPassword.Text);

@@ -24,25 +24,6 @@ namespace Hotel_Management_System.UserContols
             }
         }
 
-        #endregion
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            clientsTableAdapter.UpdateByLastName(txtFirstName.Text, txtLastName.Text, txtPhoneNumber.Text, txtEmail.Text);
-            dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
-            ClearTextBoxes();
-            CheckEditable(false);
-        }
-
-        private void btnCheckOut_Click(object sender, EventArgs e)
-        {
-            clientsTableAdapter.DeleteByLastName(txtLastName.Text);
-            dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
-            ClearTextBoxes();
-            CheckEditable(false);
-        }
-
-
 
         private void CheckEditable(bool editable)
         {
@@ -65,6 +46,26 @@ namespace Hotel_Management_System.UserContols
                 btnUpdate.Enabled = false;
             }
         }
+
+        #endregion
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            clientsTableAdapter.UpdateByLastName(txtFirstName.Text, txtLastName.Text, txtPhoneNumber.Text, txtEmail.Text);
+            dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
+            ClearTextBoxes();
+            CheckEditable(false);
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            clientsTableAdapter.DeleteByLastName(txtLastName.Text);
+            dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
+            ClearTextBoxes();
+            CheckEditable(false);
+        }
+
+
 
         private void txtLastName_TextChanged(object sender, EventArgs e)
         {
