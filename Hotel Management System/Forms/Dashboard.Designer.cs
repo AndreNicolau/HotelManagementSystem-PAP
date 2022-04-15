@@ -37,16 +37,16 @@
             this.clientsTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.ClientsTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.search_User_Control1 = new Hotel_Management_System.UserContols.Search_User_Control();
-            this.check_In_User_Control1 = new Hotel_Management_System.UserContols.Check_In_User_Control();
-            this.hotelDbDataSet1 = new Hotel_Management_System.HotelDbDataSet();
             this.rdoSearch = new System.Windows.Forms.RadioButton();
             this.headerPanel = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.search_User_Control1 = new Hotel_Management_System.UserContols.Search_User_Control();
+            this.check_In_User_Control1 = new Hotel_Management_System.UserContols.Check_In_User_Control();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
             this.mainPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet1)).BeginInit();
             this.headerPanel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // rdoCheckIn
@@ -56,7 +56,8 @@
             this.rdoCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoCheckIn.Image = global::Hotel_Management_System.Properties.Resources._64_add;
             this.rdoCheckIn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rdoCheckIn.Location = new System.Drawing.Point(682, 49);
+            this.rdoCheckIn.Location = new System.Drawing.Point(4, 4);
+            this.rdoCheckIn.Margin = new System.Windows.Forms.Padding(2);
             this.rdoCheckIn.Name = "rdoCheckIn";
             this.rdoCheckIn.Padding = new System.Windows.Forms.Padding(5, 15, 5, 5);
             this.rdoCheckIn.Size = new System.Drawing.Size(130, 130);
@@ -78,8 +79,8 @@
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnLogout.Location = new System.Drawing.Point(1092, 51);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLogout.Location = new System.Drawing.Point(272, 4);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnLogout.Size = new System.Drawing.Size(130, 130);
@@ -112,7 +113,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1886, 46);
+            this.label1.Size = new System.Drawing.Size(1904, 46);
             this.label1.TabIndex = 7;
             this.label1.Text = "DashBoard";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,11 +123,55 @@
             this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(83)))), ((int)(((byte)(99)))));
             this.mainPanel.Controls.Add(this.search_User_Control1);
             this.mainPanel.Controls.Add(this.check_In_User_Control1);
-            this.mainPanel.Location = new System.Drawing.Point(9, 207);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(5);
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.mainPanel.Location = new System.Drawing.Point(0, 200);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1886, 820);
+            this.mainPanel.Size = new System.Drawing.Size(1904, 841);
             this.mainPanel.TabIndex = 8;
+            // 
+            // rdoSearch
+            // 
+            this.rdoSearch.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rdoSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.rdoSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoSearch.Image = global::Hotel_Management_System.Properties.Resources._64_search;
+            this.rdoSearch.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rdoSearch.Location = new System.Drawing.Point(138, 4);
+            this.rdoSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.rdoSearch.Name = "rdoSearch";
+            this.rdoSearch.Padding = new System.Windows.Forms.Padding(5, 15, 5, 5);
+            this.rdoSearch.Size = new System.Drawing.Size(130, 130);
+            this.rdoSearch.TabIndex = 10;
+            this.rdoSearch.TabStop = true;
+            this.rdoSearch.Text = "Search";
+            this.rdoSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rdoSearch.UseVisualStyleBackColor = false;
+            this.rdoSearch.CheckedChanged += new System.EventHandler(this.rdoSearch_CheckedChanged);
+            // 
+            // headerPanel
+            // 
+            this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
+            this.headerPanel.Controls.Add(this.flowLayoutPanel1);
+            this.headerPanel.Controls.Add(this.label1);
+            this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.headerPanel.Location = new System.Drawing.Point(0, 0);
+            this.headerPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.headerPanel.Name = "headerPanel";
+            this.headerPanel.Size = new System.Drawing.Size(1904, 200);
+            this.headerPanel.TabIndex = 9;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.rdoCheckIn);
+            this.flowLayoutPanel1.Controls.Add(this.rdoSearch);
+            this.flowLayoutPanel1.Controls.Add(this.btnLogout);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(745, 46);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(2);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(415, 150);
+            this.flowLayoutPanel1.TabIndex = 11;
             // 
             // search_User_Control1
             // 
@@ -149,42 +194,6 @@
             this.check_In_User_Control1.Size = new System.Drawing.Size(200, 200);
             this.check_In_User_Control1.TabIndex = 3;
             // 
-            // hotelDbDataSet1
-            // 
-            this.hotelDbDataSet1.DataSetName = "HotelDbDataSet";
-            this.hotelDbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rdoSearch
-            // 
-            this.rdoSearch.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rdoSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.rdoSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoSearch.Image = global::Hotel_Management_System.Properties.Resources._64_search;
-            this.rdoSearch.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rdoSearch.Location = new System.Drawing.Point(954, 49);
-            this.rdoSearch.Name = "rdoSearch";
-            this.rdoSearch.Padding = new System.Windows.Forms.Padding(5, 15, 5, 5);
-            this.rdoSearch.Size = new System.Drawing.Size(130, 130);
-            this.rdoSearch.TabIndex = 10;
-            this.rdoSearch.TabStop = true;
-            this.rdoSearch.Text = "Search";
-            this.rdoSearch.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.rdoSearch.UseVisualStyleBackColor = false;
-            this.rdoSearch.CheckedChanged += new System.EventHandler(this.rdoSearch_CheckedChanged);
-            // 
-            // headerPanel
-            // 
-            this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
-            this.headerPanel.Controls.Add(this.rdoCheckIn);
-            this.headerPanel.Controls.Add(this.rdoSearch);
-            this.headerPanel.Controls.Add(this.label1);
-            this.headerPanel.Controls.Add(this.btnLogout);
-            this.headerPanel.Location = new System.Drawing.Point(9, 9);
-            this.headerPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(1886, 193);
-            this.headerPanel.TabIndex = 9;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -205,8 +214,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();
             this.mainPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet1)).EndInit();
             this.headerPanel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -218,12 +227,12 @@
         private HotelDbDataSetTableAdapters.ClientsTableAdapter clientsTableAdapter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel mainPanel;
-        private HotelDbDataSet hotelDbDataSet1;
         private System.Windows.Forms.RadioButton rdoCheckIn;
         private System.Windows.Forms.RadioButton rdoSearch;
         private System.Windows.Forms.Panel headerPanel;
         private UserContols.Check_In_User_Control check_In_User_Control1;
         private UserContols.Search_User_Control search_User_Control1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 
