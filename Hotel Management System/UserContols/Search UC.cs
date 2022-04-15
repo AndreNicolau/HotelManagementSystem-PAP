@@ -25,25 +25,29 @@ namespace Hotel_Management_System.UserContols
         }
 
 
-        private void CheckEditable(bool editable)
+        private bool CanBeEditable()
         {
-            if (editable)
+            // new logic :)
+            if (dataGridView1.Rows.Count > 0 && txtLastName.Text != "")
             {
+                btnCheckOut.Enabled = true;
+                btnUpdate.Enabled = true;
+                
                 txtFirstName.Enabled = true;
                 txtPhoneNumber.Enabled = true;
                 txtEmail.Enabled = true;
 
-                btnCheckOut.Enabled = true;
-                btnUpdate.Enabled = true;
-            }
-            else
+                return true;
+            } else
             {
-                txtFirstName.Enabled = false;
-                txtPhoneNumber.Enabled = false;
-                txtEmail.Enabled = false;
+                btnCheckOut.Enabled=false;
+                btnUpdate.Enabled=false;
 
-                btnCheckOut.Enabled = false;
-                btnUpdate.Enabled = false;
+                txtFirstName.Enabled=false;
+                txtEmail.Enabled=false;
+                txtPhoneNumber.Enabled=false;
+               
+                return false;
             }
         }
 
@@ -54,7 +58,7 @@ namespace Hotel_Management_System.UserContols
             clientsTableAdapter.UpdateByLastName(txtFirstName.Text, txtLastName.Text, txtPhoneNumber.Text, txtEmail.Text);
             dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
             ClearTextBoxes();
-            CheckEditable(false);
+            CanBeEditable();
         }
 
         private void btnCheckOut_Click(object sender, EventArgs e)
@@ -62,7 +66,7 @@ namespace Hotel_Management_System.UserContols
             clientsTableAdapter.DeleteByLastName(txtLastName.Text);
             dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
             ClearTextBoxes();
-            CheckEditable(false);
+            CanBeEditable();
         }
 
 
@@ -70,6 +74,7 @@ namespace Hotel_Management_System.UserContols
         private void txtLastName_TextChanged(object sender, EventArgs e)
         {
             dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
+            CanBeEditable();
         }
     }
 }

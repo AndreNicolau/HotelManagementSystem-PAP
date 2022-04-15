@@ -209,7 +209,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Enabled = false;
-            this.btnUpdate.Location = new System.Drawing.Point(842, 546);
+            this.btnUpdate.Location = new System.Drawing.Point(842, 513);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(240, 27);
             this.btnUpdate.TabIndex = 11;
@@ -220,7 +220,7 @@
             // btnCheckOut
             // 
             this.btnCheckOut.Enabled = false;
-            this.btnCheckOut.Location = new System.Drawing.Point(842, 579);
+            this.btnCheckOut.Location = new System.Drawing.Point(842, 546);
             this.btnCheckOut.Name = "btnCheckOut";
             this.btnCheckOut.Size = new System.Drawing.Size(240, 27);
             this.btnCheckOut.TabIndex = 12;
