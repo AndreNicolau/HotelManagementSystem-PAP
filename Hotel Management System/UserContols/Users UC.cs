@@ -61,6 +61,9 @@ namespace Hotel_Management_System.UserContols
 
             btnRemoveUser.Enabled = false;
             btnUpdate.Enabled = false;
+
+            txtPassword.Clear();
+            txtUsername.Clear();
         }
 
         private void btnNewUser_Click(object sender, EventArgs e)
