@@ -13,7 +13,7 @@ namespace Hotel_Management_System.UserContols
             dataGridView1.DataSource = usersTableAdapter.GetData();
         }
 
-        #region private classes
+        #region My functions
 
         private bool CanEdit()
         {

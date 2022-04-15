@@ -12,6 +12,20 @@ namespace Hotel_Management_System.UserContols
             dataGridView1.DataSource = clientsTableAdapter.GetData();
         }
 
+        #region My functions
+        private void ClearTextBoxes()
+        {
+            foreach (Control control in Controls)
+            {
+                if (control is TextBox)
+                {
+                    (control as TextBox).Clear();
+                }
+            }
+        }
+
+        #endregion
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             clientsTableAdapter.UpdateByLastName(txtFirstName.Text, txtLastName.Text, txtPhoneNumber.Text, txtEmail.Text);
@@ -28,16 +42,7 @@ namespace Hotel_Management_System.UserContols
             CheckEditable(false);
         }
 
-        private void ClearTextBoxes()
-        {
-            foreach (Control control in Controls)
-            {
-                if (control is TextBox)
-                {
-                    (control as TextBox).Clear();
-                }
-            }
-        }
+
 
         private void CheckEditable(bool editable)
         {
