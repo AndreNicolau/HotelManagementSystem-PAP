@@ -79,11 +79,17 @@
     <Compile Include="UserContols\Check In User Control.Designer.cs">
       <DependentUpon>Check In User Control.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserContols\Search User Control.cs">
+    <Compile Include="UserContols\Search UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserContols\Search User Control.Designer.cs">
-      <DependentUpon>Search User Control.cs</DependentUpon>
+    <Compile Include="UserContols\Search UC.Designer.cs">
+      <DependentUpon>Search UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserContols\Users UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserContols\Users UC.Designer.cs">
+      <DependentUpon>Users UC.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -104,8 +110,11 @@
     <EmbeddedResource Include="UserContols\Check In User Control.resx">
       <DependentUpon>Check In User Control.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserContols\Search User Control.resx">
-      <DependentUpon>Search User Control.cs</DependentUpon>
+    <EmbeddedResource Include="UserContols\Search UC.resx">
+      <DependentUpon>Search UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserContols\Users UC.resx">
+      <DependentUpon>Users UC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="HotelDbDataSet.xsc">
       <DependentUpon>HotelDbDataSet.xsd</DependentUpon>
@@ -159,6 +168,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64_user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,22 +24,23 @@ namespace Hotel_Management_System
             // TODO: This line of code loads data into the 'hotelDbDataSet.Clients' table. You can move, or remove it, as needed.
             this.clientsTableAdapter.Fill(this.hotelDbDataSet.Clients);
 
-            check_In_User_Control1.Visible = false;
-            search_User_Control1.Visible = false;
+            check_In_UC.Visible = false;
+            search_UC.Visible = false;
+            users_UC1.Visible = false;
         }
 
         private void rdoCheckIn_CheckedChanged(object sender, EventArgs e)
         {
             if (rdoCheckIn.Checked)
             {
-                check_In_User_Control1.Dock = DockStyle.Fill;
-                check_In_User_Control1.Visible = true;
+                check_In_UC.Dock = DockStyle.Fill;
+                check_In_UC.Visible = true;
 
                 rdoCheckIn.BackColor = Color.White;
             }
             else
             {
-                check_In_User_Control1.Visible = false;
+                check_In_UC.Visible = false;
                 rdoCheckIn.BackColor = rdoColor;
             }
 
@@ -49,15 +50,31 @@ namespace Hotel_Management_System
         {
             if (rdoSearch.Checked)
             {
-                search_User_Control1.Dock = DockStyle.Fill;
-                search_User_Control1.Visible = true;
+                search_UC.Dock = DockStyle.Fill;
+                search_UC.Visible = true;
 
                 rdoSearch.BackColor = Color.White;
             }
             else
             {
-                search_User_Control1.Visible = false;
+                search_UC.Visible = false;
                 rdoSearch.BackColor = rdoColor;
+            }
+        }
+
+        private void rdoUsers_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoUsers.Checked)
+            {
+                users_UC1.Dock = DockStyle.Fill;
+                users_UC1.Visible = true;
+
+                rdoUsers.BackColor = Color.White;
+            }
+            else
+            {
+                users_UC1.Visible = false;
+                rdoUsers.BackColor = rdoColor;
             }
         }
     }

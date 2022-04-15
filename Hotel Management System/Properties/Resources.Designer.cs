@@ -63,76 +63,6 @@ namespace Hotel_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _128_add {
-            get {
-                object obj = ResourceManager.GetObject("128_add", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _128_check {
-            get {
-                object obj = ResourceManager.GetObject("128_check", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _128_cross {
-            get {
-                object obj = ResourceManager.GetObject("128_cross", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _128_search {
-            get {
-                object obj = ResourceManager.GetObject("128_search", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _128_settings {
-            get {
-                object obj = ResourceManager.GetObject("128_settings", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _128_sign_in {
-            get {
-                object obj = ResourceManager.GetObject("128_sign_in", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _128_sign_out {
-            get {
-                object obj = ResourceManager.GetObject("128_sign_out", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _64_add {
             get {
                 object obj = ResourceManager.GetObject("64_add", resourceCulture);
@@ -226,6 +156,16 @@ namespace Hotel_Management_System.Properties {
         internal static System.Drawing.Bitmap _64_sign_out {
             get {
                 object obj = ResourceManager.GetObject("64_sign_out", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _64_user {
+            get {
+                object obj = ResourceManager.GetObject("_64_user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

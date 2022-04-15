@@ -35,3 +35,4 @@ C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management Sys
 C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel Management System.exe
 C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel Management System.pdb
 C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.UserContols.Search_User_Control.resources
+C:\Users\Nicolau\Documents\GitHub\HotelManagementSystem-PAP\Hotel Management System\obj\Debug\Hotel_Management_System.UserContols.Users_UC.resources
