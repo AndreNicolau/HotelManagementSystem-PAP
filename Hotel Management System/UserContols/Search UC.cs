@@ -27,7 +27,6 @@ namespace Hotel_Management_System.UserContols
 
         private bool CanBeEditable()
         {
-            // new logic :)
             if (dataGridView1.Rows.Count > 0 && txtLastName.Text != "")
             {
                 btnCheckOut.Enabled = true;
@@ -57,24 +56,33 @@ namespace Hotel_Management_System.UserContols
         {
             clientsTableAdapter.UpdateByLastName(txtFirstName.Text, txtLastName.Text, txtPhoneNumber.Text, txtEmail.Text);
             dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
-            ClearTextBoxes();
             CanBeEditable();
         }
 
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
             clientsTableAdapter.DeleteByLastName(txtLastName.Text);
-            dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
+            dataGridView1.DataSource = clientsTableAdapter.GetData();
             ClearTextBoxes();
             CanBeEditable();
         }
 
-
-
         private void txtLastName_TextChanged(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
+            if (txtLastName.Text != "")
+                dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
+            else
+                dataGridView1.DataSource = clientsTableAdapter.GetData();
+
+            if (dataGridView1.Rows.Count == 1)
+                clientsBindingSource.DataSource = dataGridView1.DataSource;
+
             CanBeEditable();
+        }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            clientsBindingSource.DataSource = dataGridView1.DataSource;
         }
     }
 }
