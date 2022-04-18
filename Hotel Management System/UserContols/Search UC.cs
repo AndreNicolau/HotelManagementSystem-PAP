@@ -83,7 +83,12 @@ namespace Hotel_Management_System.UserContols
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            clientsBindingSource.DataSource = dataGridView1.DataSource;
+            if (e.RowIndex >= 0)
+            {
+               DataGridViewRow dataGridViewRow = dataGridView1.Rows[e.RowIndex];
+                txtFirstName.Text = dataGridViewRow.Cells[0].Value.ToString();
+                txtLastName.Text = dataGridViewRow.Cells[1].Value.ToString();
+            }
         }
     }
 }
