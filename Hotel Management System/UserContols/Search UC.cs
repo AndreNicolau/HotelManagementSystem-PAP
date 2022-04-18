@@ -31,21 +31,22 @@ namespace Hotel_Management_System.UserContols
             {
                 btnCheckOut.Enabled = true;
                 btnUpdate.Enabled = true;
-                
+
                 txtFirstName.Enabled = true;
                 txtPhoneNumber.Enabled = true;
                 txtEmail.Enabled = true;
 
                 return true;
-            } else
+            }
+            else
             {
-                btnCheckOut.Enabled=false;
-                btnUpdate.Enabled=false;
+                btnCheckOut.Enabled = false;
+                btnUpdate.Enabled = false;
 
-                txtFirstName.Enabled=false;
-                txtEmail.Enabled=false;
-                txtPhoneNumber.Enabled=false;
-               
+                txtFirstName.Enabled = false;
+                txtEmail.Enabled = false;
+                txtPhoneNumber.Enabled = false;
+
                 return false;
             }
         }
