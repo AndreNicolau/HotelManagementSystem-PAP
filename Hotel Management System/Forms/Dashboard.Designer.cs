@@ -139,6 +139,7 @@
             // 
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Controls.Add(this.rdoCheckIn);
             this.flowLayoutPanel1.Controls.Add(this.rdoSearch);
             this.flowLayoutPanel1.Controls.Add(this.rdoUsers);
@@ -147,7 +148,7 @@
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(2);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(542, 140);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(544, 142);
             this.flowLayoutPanel1.TabIndex = 11;
             // 
             // rdoCheckIn

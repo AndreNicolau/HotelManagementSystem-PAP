@@ -45,7 +45,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(875, 91);
+            this.label1.Location = new System.Drawing.Point(912, 150);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 20);
@@ -55,7 +55,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(875, 163);
+            this.label2.Location = new System.Drawing.Point(917, 214);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 20);
@@ -65,7 +65,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(861, 235);
+            this.label3.Location = new System.Drawing.Point(903, 286);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 20);
@@ -75,7 +75,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(894, 307);
+            this.label4.Location = new System.Drawing.Point(936, 358);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 20);
@@ -84,7 +84,7 @@
             // 
             // textFirstName
             // 
-            this.textFirstName.Location = new System.Drawing.Point(783, 124);
+            this.textFirstName.Location = new System.Drawing.Point(825, 175);
             this.textFirstName.Margin = new System.Windows.Forms.Padding(5);
             this.textFirstName.Name = "textFirstName";
             this.textFirstName.Size = new System.Drawing.Size(270, 26);
@@ -94,7 +94,7 @@
             // 
             // textLastName
             // 
-            this.textLastName.Location = new System.Drawing.Point(783, 196);
+            this.textLastName.Location = new System.Drawing.Point(825, 247);
             this.textLastName.Margin = new System.Windows.Forms.Padding(5);
             this.textLastName.Name = "textLastName";
             this.textLastName.Size = new System.Drawing.Size(270, 26);
@@ -104,7 +104,7 @@
             // 
             // textPhoneNumber
             // 
-            this.textPhoneNumber.Location = new System.Drawing.Point(783, 268);
+            this.textPhoneNumber.Location = new System.Drawing.Point(825, 319);
             this.textPhoneNumber.Margin = new System.Windows.Forms.Padding(5);
             this.textPhoneNumber.Name = "textPhoneNumber";
             this.textPhoneNumber.Size = new System.Drawing.Size(270, 26);
@@ -115,7 +115,7 @@
             // 
             // textEmail
             // 
-            this.textEmail.Location = new System.Drawing.Point(783, 340);
+            this.textEmail.Location = new System.Drawing.Point(825, 391);
             this.textEmail.Margin = new System.Windows.Forms.Padding(5);
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(270, 26);
@@ -130,7 +130,7 @@
             this.buttonCheckIn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonCheckIn.Image = global::Hotel_Management_System.Properties.Resources._64_check;
             this.buttonCheckIn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonCheckIn.Location = new System.Drawing.Point(783, 416);
+            this.buttonCheckIn.Location = new System.Drawing.Point(825, 467);
             this.buttonCheckIn.Name = "buttonCheckIn";
             this.buttonCheckIn.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.buttonCheckIn.Size = new System.Drawing.Size(130, 130);
@@ -147,7 +147,7 @@
             this.buttonCancel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonCancel.Image = global::Hotel_Management_System.Properties.Resources._64_cross;
             this.buttonCancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonCancel.Location = new System.Drawing.Point(923, 416);
+            this.buttonCancel.Location = new System.Drawing.Point(965, 467);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.buttonCancel.Size = new System.Drawing.Size(130, 130);
@@ -191,7 +191,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Check_In_User_Control";
-            this.Size = new System.Drawing.Size(2631, 1531);
+            this.Size = new System.Drawing.Size(1920, 1080);
             this.ResumeLayout(false);
             this.PerformLayout();
 

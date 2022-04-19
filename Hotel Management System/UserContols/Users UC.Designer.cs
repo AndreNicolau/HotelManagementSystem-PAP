@@ -77,7 +77,7 @@
             this.passwordDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.usersBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(313, 150);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -123,7 +123,7 @@
             // txtUsername
             // 
             this.txtUsername.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Username", true));
-            this.txtUsername.Location = new System.Drawing.Point(842, 512);
+            this.txtUsername.Location = new System.Drawing.Point(840, 385);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(240, 26);
@@ -134,8 +134,8 @@
             // 
             this.txtPassword.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Password", true));
             this.txtPassword.Enabled = false;
-            this.txtPassword.Location = new System.Drawing.Point(842, 568);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword.Location = new System.Drawing.Point(840, 441);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(240, 26);
             this.txtPassword.TabIndex = 3;
@@ -145,7 +145,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(838, 487);
+            this.label2.Location = new System.Drawing.Point(840, 360);
+            this.label2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 4;
@@ -155,7 +156,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(838, 543);
+            this.label3.Location = new System.Drawing.Point(840, 416);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 5;
@@ -167,7 +168,7 @@
             this.btnUpdate.Enabled = false;
             this.btnUpdate.Image = global::Hotel_Management_System.Properties.Resources._64_edit;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnUpdate.Location = new System.Drawing.Point(275, 3);
+            this.btnUpdate.Location = new System.Drawing.Point(280, 8);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnUpdate.Size = new System.Drawing.Size(130, 130);
@@ -183,7 +184,7 @@
             this.btnRemoveUser.Enabled = false;
             this.btnRemoveUser.Image = global::Hotel_Management_System.Properties.Resources._64_minus;
             this.btnRemoveUser.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnRemoveUser.Location = new System.Drawing.Point(139, 3);
+            this.btnRemoveUser.Location = new System.Drawing.Point(144, 8);
             this.btnRemoveUser.Name = "btnRemoveUser";
             this.btnRemoveUser.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnRemoveUser.Size = new System.Drawing.Size(130, 130);
@@ -199,7 +200,7 @@
             this.btnNewUser.Enabled = false;
             this.btnNewUser.Image = global::Hotel_Management_System.Properties.Resources._64_add;
             this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnNewUser.Location = new System.Drawing.Point(3, 3);
+            this.btnNewUser.Location = new System.Drawing.Point(8, 8);
             this.btnNewUser.Name = "btnNewUser";
             this.btnNewUser.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnNewUser.Size = new System.Drawing.Size(130, 130);
@@ -213,13 +214,17 @@
             // 
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Controls.Add(this.btnNewUser);
             this.flowLayoutPanel1.Controls.Add(this.btnRemoveUser);
             this.flowLayoutPanel1.Controls.Add(this.btnUpdate);
             this.flowLayoutPanel1.Controls.Add(this.btnClear);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(688, 602);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(688, 477);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(544, 136);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(556, 148);
             this.flowLayoutPanel1.TabIndex = 15;
             // 
             // btnClear
@@ -229,7 +234,7 @@
             this.btnClear.ForeColor = System.Drawing.Color.Black;
             this.btnClear.Image = global::Hotel_Management_System.Properties.Resources._64_cross;
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnClear.Location = new System.Drawing.Point(411, 3);
+            this.btnClear.Location = new System.Drawing.Point(416, 8);
             this.btnClear.Name = "btnClear";
             this.btnClear.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnClear.Size = new System.Drawing.Size(130, 130);
@@ -243,7 +248,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(39)))), ((int)(((byte)(53)))));
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
