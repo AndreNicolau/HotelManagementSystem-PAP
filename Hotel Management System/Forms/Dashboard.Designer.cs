@@ -199,8 +199,8 @@
             // 
             this.users_UC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
             this.users_UC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.users_UC1.Location = new System.Drawing.Point(445, 39);
-            this.users_UC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.users_UC1.Location = new System.Drawing.Point(453, 39);
+            this.users_UC1.Margin = new System.Windows.Forms.Padding(5);
             this.users_UC1.Name = "users_UC1";
             this.users_UC1.Size = new System.Drawing.Size(200, 200);
             this.users_UC1.TabIndex = 5;
@@ -209,8 +209,8 @@
             // 
             this.search_UC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
             this.search_UC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_UC.Location = new System.Drawing.Point(237, 39);
-            this.search_UC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.search_UC.Location = new System.Drawing.Point(243, 39);
+            this.search_UC.Margin = new System.Windows.Forms.Padding(5);
             this.search_UC.Name = "search_UC";
             this.search_UC.Size = new System.Drawing.Size(200, 200);
             this.search_UC.TabIndex = 4;
@@ -221,7 +221,7 @@
             this.check_In_UC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check_In_UC.ForeColor = System.Drawing.Color.White;
             this.check_In_UC.Location = new System.Drawing.Point(33, 39);
-            this.check_In_UC.Margin = new System.Windows.Forms.Padding(0);
+            this.check_In_UC.Margin = new System.Windows.Forms.Padding(5);
             this.check_In_UC.Name = "check_In_UC";
             this.check_In_UC.Size = new System.Drawing.Size(200, 200);
             this.check_In_UC.TabIndex = 3;
