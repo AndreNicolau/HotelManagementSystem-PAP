@@ -80,11 +80,5 @@ namespace Hotel_Management_System
                 rdoUsers.BackColor = rdoColor;
             }
         }
-
-        // Exit application when dashboard closes
-        private void Dashboard_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }

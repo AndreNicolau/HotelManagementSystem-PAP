@@ -76,7 +76,7 @@
             this.usernameDataGridViewTextBoxColumn,
             this.passwordDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.usersBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(470, 177);
+            this.dataGridView1.Location = new System.Drawing.Point(313, 282);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -123,7 +123,7 @@
             // txtUsername
             // 
             this.txtUsername.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Username", true));
-            this.txtUsername.Location = new System.Drawing.Point(842, 432);
+            this.txtUsername.Location = new System.Drawing.Point(842, 512);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(240, 26);
@@ -134,7 +134,7 @@
             // 
             this.txtPassword.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "Password", true));
             this.txtPassword.Enabled = false;
-            this.txtPassword.Location = new System.Drawing.Point(842, 488);
+            this.txtPassword.Location = new System.Drawing.Point(842, 568);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(240, 26);
@@ -145,7 +145,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(838, 407);
+            this.label2.Location = new System.Drawing.Point(838, 487);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 4;
@@ -155,7 +155,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(838, 463);
+            this.label3.Location = new System.Drawing.Point(838, 543);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 5;
@@ -215,7 +215,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnRemoveUser);
             this.flowLayoutPanel1.Controls.Add(this.btnUpdate);
             this.flowLayoutPanel1.Controls.Add(this.btnClear);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(720, 522);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(720, 602);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(480, 345);
@@ -253,6 +253,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Users_UC";
+            this.Size = new System.Drawing.Size(1920, 1080);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();

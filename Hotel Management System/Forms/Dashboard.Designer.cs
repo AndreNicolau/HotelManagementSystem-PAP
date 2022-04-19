@@ -197,13 +197,12 @@
             // 
             // users_UC1
             // 
-            this.users_UC1.AutoSize = true;
             this.users_UC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
             this.users_UC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.users_UC1.Location = new System.Drawing.Point(445, 39);
             this.users_UC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.users_UC1.Name = "users_UC1";
-            this.users_UC1.Size = new System.Drawing.Size(1769, 870);
+            this.users_UC1.Size = new System.Drawing.Size(200, 200);
             this.users_UC1.TabIndex = 5;
             // 
             // search_UC
@@ -242,12 +241,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Dashboard_FormClosed);
             this.Load += new System.EventHandler(this.Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();
             this.mainPanel.ResumeLayout(false);
-            this.mainPanel.PerformLayout();
             this.headerPanel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
