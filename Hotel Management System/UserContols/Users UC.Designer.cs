@@ -44,10 +44,12 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnRemoveUser = new System.Windows.Forms.Button();
             this.btnNewUser = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -85,12 +87,14 @@
             this.usernameDataGridViewTextBoxColumn.DataPropertyName = "Username";
             this.usernameDataGridViewTextBoxColumn.HeaderText = "Username";
             this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            this.usernameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // passwordDataGridViewTextBoxColumn
             // 
             this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
             this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
             this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            this.passwordDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // usersBindingSource1
             // 
@@ -154,45 +158,69 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnUpdate.Enabled = false;
-            this.btnUpdate.Location = new System.Drawing.Point(842, 555);
+            this.btnUpdate.Image = global::Hotel_Management_System.Properties.Resources._64_edit;
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnUpdate.Location = new System.Drawing.Point(320, 3);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(240, 27);
+            this.btnUpdate.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            this.btnUpdate.Size = new System.Drawing.Size(130, 130);
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Update Info";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnRemoveUser
             // 
+            this.btnRemoveUser.BackColor = System.Drawing.Color.Red;
             this.btnRemoveUser.Enabled = false;
-            this.btnRemoveUser.Location = new System.Drawing.Point(842, 588);
+            this.btnRemoveUser.Image = global::Hotel_Management_System.Properties.Resources._64_minus;
+            this.btnRemoveUser.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnRemoveUser.Location = new System.Drawing.Point(184, 3);
             this.btnRemoveUser.Name = "btnRemoveUser";
-            this.btnRemoveUser.Size = new System.Drawing.Size(240, 27);
+            this.btnRemoveUser.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            this.btnRemoveUser.Size = new System.Drawing.Size(130, 130);
             this.btnRemoveUser.TabIndex = 13;
             this.btnRemoveUser.Text = "Remove User";
-            this.btnRemoveUser.UseVisualStyleBackColor = true;
+            this.btnRemoveUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRemoveUser.UseVisualStyleBackColor = false;
             this.btnRemoveUser.Click += new System.EventHandler(this.btnRemoveUser_Click);
             // 
             // btnNewUser
             // 
+            this.btnNewUser.BackColor = System.Drawing.Color.LimeGreen;
             this.btnNewUser.Enabled = false;
-            this.btnNewUser.Location = new System.Drawing.Point(842, 621);
+            this.btnNewUser.Image = global::Hotel_Management_System.Properties.Resources._64_add;
+            this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnNewUser.Location = new System.Drawing.Point(48, 3);
             this.btnNewUser.Name = "btnNewUser";
-            this.btnNewUser.Size = new System.Drawing.Size(240, 27);
+            this.btnNewUser.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            this.btnNewUser.Size = new System.Drawing.Size(130, 130);
             this.btnNewUser.TabIndex = 14;
             this.btnNewUser.Text = "New User";
-            this.btnNewUser.UseVisualStyleBackColor = true;
+            this.btnNewUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNewUser.UseVisualStyleBackColor = false;
             this.btnNewUser.Click += new System.EventHandler(this.btnNewUser_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.btnNewUser);
+            this.flowLayoutPanel1.Controls.Add(this.btnRemoveUser);
+            this.flowLayoutPanel1.Controls.Add(this.btnUpdate);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(720, 522);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(480, 345);
+            this.flowLayoutPanel1.TabIndex = 15;
             // 
             // Users_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
-            this.Controls.Add(this.btnNewUser);
-            this.Controls.Add(this.btnRemoveUser);
-            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPassword);
@@ -207,6 +235,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,5 +258,6 @@
         private System.Windows.Forms.Button btnRemoveUser;
         private System.Windows.Forms.Button btnNewUser;
         private System.Windows.Forms.BindingSource usersBindingSource1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

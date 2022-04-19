@@ -212,7 +212,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnUpdate.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnUpdate.Enabled = false;
             this.btnUpdate.Image = global::Hotel_Management_System.Properties.Resources._64_edit;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
