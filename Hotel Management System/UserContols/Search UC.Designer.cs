@@ -48,9 +48,12 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCheckOut = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -209,33 +212,70 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackColor = System.Drawing.Color.LimeGreen;
             this.btnUpdate.Enabled = false;
-            this.btnUpdate.Location = new System.Drawing.Point(842, 513);
+            this.btnUpdate.Image = global::Hotel_Management_System.Properties.Resources._64_edit;
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnUpdate.Location = new System.Drawing.Point(48, 3);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(240, 27);
+            this.btnUpdate.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            this.btnUpdate.Size = new System.Drawing.Size(130, 130);
             this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Update Info";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnCheckOut
             // 
+            this.btnCheckOut.BackColor = System.Drawing.Color.Red;
             this.btnCheckOut.Enabled = false;
-            this.btnCheckOut.Location = new System.Drawing.Point(842, 546);
+            this.btnCheckOut.Image = global::Hotel_Management_System.Properties.Resources._64_minus;
+            this.btnCheckOut.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCheckOut.Location = new System.Drawing.Point(184, 3);
             this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(240, 27);
+            this.btnCheckOut.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            this.btnCheckOut.Size = new System.Drawing.Size(130, 130);
             this.btnCheckOut.TabIndex = 12;
             this.btnCheckOut.Text = "Check Out";
-            this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCheckOut.UseVisualStyleBackColor = false;
             this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.Yellow;
+            this.btnClear.Enabled = false;
+            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.Image = global::Hotel_Management_System.Properties.Resources._64_cross;
+            this.btnClear.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnClear.Location = new System.Drawing.Point(320, 3);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
+            this.btnClear.Size = new System.Drawing.Size(130, 130);
+            this.btnClear.TabIndex = 13;
+            this.btnClear.Text = "Clear";
+            this.btnClear.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.btnUpdate);
+            this.flowLayoutPanel1.Controls.Add(this.btnCheckOut);
+            this.flowLayoutPanel1.Controls.Add(this.btnClear);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(720, 514);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(480, 345);
+            this.flowLayoutPanel1.TabIndex = 14;
             // 
             // Search_User_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
-            this.Controls.Add(this.btnCheckOut);
-            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtPhoneNumber);
@@ -253,6 +293,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,5 +320,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnCheckOut;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

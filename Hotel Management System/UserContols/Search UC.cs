@@ -71,9 +71,16 @@ namespace Hotel_Management_System.UserContols
         private void txtLastName_TextChanged(object sender, EventArgs e)
         {
             if (txtLastName.Text != "")
+            {
                 dataGridView1.DataSource = clientsTableAdapter.GetDataByLastName(txtLastName.Text);
+                btnClear.Enabled = true;
+            }   
             else
+            {
                 dataGridView1.DataSource = clientsTableAdapter.GetData();
+                btnClear.Enabled = false;
+            }
+                
 
             if (dataGridView1.Rows.Count == 1)
                 clientsBindingSource.DataSource = dataGridView1.DataSource;
@@ -89,6 +96,11 @@ namespace Hotel_Management_System.UserContols
                 txtFirstName.Text = dataGridViewRow.Cells[0].Value.ToString();
                 txtLastName.Text = dataGridViewRow.Cells[1].Value.ToString();
             }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            ClearTextBoxes();
         }
     }
 }

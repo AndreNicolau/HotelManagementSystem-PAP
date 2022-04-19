@@ -29,6 +29,7 @@ namespace Hotel_Management_System
             users_UC1.Visible = false;
         }
 
+        // Show CheckIn UserControl
         private void rdoCheckIn_CheckedChanged(object sender, EventArgs e)
         {
             if (rdoCheckIn.Checked)
@@ -46,6 +47,7 @@ namespace Hotel_Management_System
 
         }
 
+        // Show Search UserControl
         private void rdoSearch_CheckedChanged(object sender, EventArgs e)
         {
             if (rdoSearch.Checked)
@@ -62,6 +64,7 @@ namespace Hotel_Management_System
             }
         }
 
+        // Show Users UserControl
         private void rdoUsers_CheckedChanged(object sender, EventArgs e)
         {
             if (rdoUsers.Checked)
@@ -76,6 +79,12 @@ namespace Hotel_Management_System
                 users_UC1.Visible = false;
                 rdoUsers.BackColor = rdoColor;
             }
+        }
+
+        // Exit application when dashboard closes
+        private void Dashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
