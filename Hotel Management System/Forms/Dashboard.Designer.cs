@@ -110,11 +110,11 @@
             this.flowLayoutPanel1.Controls.Add(this.rdoSearch);
             this.flowLayoutPanel1.Controls.Add(this.rdoUsers);
             this.flowLayoutPanel1.Controls.Add(this.btnLogout);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(664, 46);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(681, 46);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(2);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(576, 150);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(542, 150);
             this.flowLayoutPanel1.TabIndex = 11;
             // 
             // rdoCheckIn
