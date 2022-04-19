@@ -21,6 +21,7 @@ namespace Hotel_Management_System.UserContols
             {
                 btnUpdate.Enabled = true;
                 btnRemoveUser.Enabled = true;
+                btnClear.Enabled = true;
                 txtPassword.Enabled = true;
 
                 usersBindingSource.DataSource = dataGridView1.DataSource;
@@ -31,6 +32,7 @@ namespace Hotel_Management_System.UserContols
             {
                 btnUpdate.Enabled = false;
                 btnRemoveUser.Enabled = false;
+                btnClear.Enabled = false;
                 txtPassword.Enabled = false;
                 txtPassword.Clear();
                 return false;
@@ -42,6 +44,7 @@ namespace Hotel_Management_System.UserContols
             if (dataGridView1.Rows.Count == 0 && txtUsername.Text != "")
             {
                 txtPassword.Enabled = true;
+                btnClear.Enabled = true;
 
                 if (txtPassword.Text != "")
                 {
@@ -58,6 +61,7 @@ namespace Hotel_Management_System.UserContols
             else
             {
                 txtPassword.Enabled = false;
+                btnClear.Enabled = false;
                 btnNewUser.Enabled = false;
                 return false;
             }
@@ -97,6 +101,7 @@ namespace Hotel_Management_System.UserContols
 
             btnRemoveUser.Enabled = false;
             btnUpdate.Enabled = false;
+            btnClear.Enabled = false;
 
             txtPassword.Clear();
             txtUsername.Clear();
@@ -127,6 +132,21 @@ namespace Hotel_Management_System.UserContols
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
             CanInsertNewUser();
+        }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow dataGridViewRow = dataGridView1.Rows[ e.RowIndex ];
+                txtUsername.Text = dataGridViewRow.Cells[ 0 ].Value.ToString();
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtUsername.Clear();
+            txtPassword.Clear();
         }
     }
 }
