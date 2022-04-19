@@ -76,12 +76,12 @@
             this.usernameDataGridViewTextBoxColumn,
             this.passwordDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.usersBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(313, 282);
+            this.dataGridView1.Location = new System.Drawing.Point(313, 150);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1295, 200);
+            this.dataGridView1.Size = new System.Drawing.Size(1300, 200);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
@@ -167,7 +167,7 @@
             this.btnUpdate.Enabled = false;
             this.btnUpdate.Image = global::Hotel_Management_System.Properties.Resources._64_edit;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnUpdate.Location = new System.Drawing.Point(320, 3);
+            this.btnUpdate.Location = new System.Drawing.Point(275, 3);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnUpdate.Size = new System.Drawing.Size(130, 130);
@@ -183,7 +183,7 @@
             this.btnRemoveUser.Enabled = false;
             this.btnRemoveUser.Image = global::Hotel_Management_System.Properties.Resources._64_minus;
             this.btnRemoveUser.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnRemoveUser.Location = new System.Drawing.Point(184, 3);
+            this.btnRemoveUser.Location = new System.Drawing.Point(139, 3);
             this.btnRemoveUser.Name = "btnRemoveUser";
             this.btnRemoveUser.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnRemoveUser.Size = new System.Drawing.Size(130, 130);
@@ -199,7 +199,7 @@
             this.btnNewUser.Enabled = false;
             this.btnNewUser.Image = global::Hotel_Management_System.Properties.Resources._64_add;
             this.btnNewUser.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnNewUser.Location = new System.Drawing.Point(48, 3);
+            this.btnNewUser.Location = new System.Drawing.Point(3, 3);
             this.btnNewUser.Name = "btnNewUser";
             this.btnNewUser.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnNewUser.Size = new System.Drawing.Size(130, 130);
@@ -211,14 +211,15 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.Controls.Add(this.btnNewUser);
             this.flowLayoutPanel1.Controls.Add(this.btnRemoveUser);
             this.flowLayoutPanel1.Controls.Add(this.btnUpdate);
             this.flowLayoutPanel1.Controls.Add(this.btnClear);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(720, 602);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(688, 602);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(480, 345);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(544, 136);
             this.flowLayoutPanel1.TabIndex = 15;
             // 
             // btnClear
@@ -228,7 +229,7 @@
             this.btnClear.ForeColor = System.Drawing.Color.Black;
             this.btnClear.Image = global::Hotel_Management_System.Properties.Resources._64_cross;
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnClear.Location = new System.Drawing.Point(48, 139);
+            this.btnClear.Location = new System.Drawing.Point(411, 3);
             this.btnClear.Name = "btnClear";
             this.btnClear.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnClear.Size = new System.Drawing.Size(130, 130);

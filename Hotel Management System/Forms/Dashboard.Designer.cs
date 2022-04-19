@@ -35,15 +35,15 @@
             this.clientsTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.ClientsTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.users_UC1 = new Hotel_Management_System.UserContols.Users_UC();
+            this.search_UC = new Hotel_Management_System.UserContols.Search_User_Control();
+            this.check_In_UC = new Hotel_Management_System.UserContols.Check_In_User_Control();
             this.headerPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.rdoCheckIn = new System.Windows.Forms.RadioButton();
             this.rdoSearch = new System.Windows.Forms.RadioButton();
             this.rdoUsers = new System.Windows.Forms.RadioButton();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.users_UC1 = new Hotel_Management_System.UserContols.Users_UC();
-            this.search_UC = new Hotel_Management_System.UserContols.Search_User_Control();
-            this.check_In_UC = new Hotel_Management_System.UserContols.Check_In_User_Control();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).BeginInit();
             this.mainPanel.SuspendLayout();
@@ -92,6 +92,37 @@
             this.mainPanel.Size = new System.Drawing.Size(1904, 841);
             this.mainPanel.TabIndex = 8;
             // 
+            // users_UC1
+            // 
+            this.users_UC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
+            this.users_UC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.users_UC1.Location = new System.Drawing.Point(453, 39);
+            this.users_UC1.Margin = new System.Windows.Forms.Padding(5);
+            this.users_UC1.Name = "users_UC1";
+            this.users_UC1.Size = new System.Drawing.Size(200, 200);
+            this.users_UC1.TabIndex = 5;
+            // 
+            // search_UC
+            // 
+            this.search_UC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
+            this.search_UC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_UC.Location = new System.Drawing.Point(243, 39);
+            this.search_UC.Margin = new System.Windows.Forms.Padding(5);
+            this.search_UC.Name = "search_UC";
+            this.search_UC.Size = new System.Drawing.Size(200, 200);
+            this.search_UC.TabIndex = 4;
+            // 
+            // check_In_UC
+            // 
+            this.check_In_UC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
+            this.check_In_UC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check_In_UC.ForeColor = System.Drawing.Color.White;
+            this.check_In_UC.Location = new System.Drawing.Point(33, 39);
+            this.check_In_UC.Margin = new System.Windows.Forms.Padding(5);
+            this.check_In_UC.Name = "check_In_UC";
+            this.check_In_UC.Size = new System.Drawing.Size(200, 200);
+            this.check_In_UC.TabIndex = 3;
+            // 
             // headerPanel
             // 
             this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
@@ -106,6 +137,8 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.Controls.Add(this.rdoCheckIn);
             this.flowLayoutPanel1.Controls.Add(this.rdoSearch);
             this.flowLayoutPanel1.Controls.Add(this.rdoUsers);
@@ -114,7 +147,7 @@
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(2);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(542, 150);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(542, 140);
             this.flowLayoutPanel1.TabIndex = 11;
             // 
             // rdoCheckIn
@@ -195,37 +228,6 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // users_UC1
-            // 
-            this.users_UC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
-            this.users_UC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.users_UC1.Location = new System.Drawing.Point(453, 39);
-            this.users_UC1.Margin = new System.Windows.Forms.Padding(5);
-            this.users_UC1.Name = "users_UC1";
-            this.users_UC1.Size = new System.Drawing.Size(200, 200);
-            this.users_UC1.TabIndex = 5;
-            // 
-            // search_UC
-            // 
-            this.search_UC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
-            this.search_UC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_UC.Location = new System.Drawing.Point(243, 39);
-            this.search_UC.Margin = new System.Windows.Forms.Padding(5);
-            this.search_UC.Name = "search_UC";
-            this.search_UC.Size = new System.Drawing.Size(200, 200);
-            this.search_UC.TabIndex = 4;
-            // 
-            // check_In_UC
-            // 
-            this.check_In_UC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(54)))), ((int)(((byte)(68)))));
-            this.check_In_UC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check_In_UC.ForeColor = System.Drawing.Color.White;
-            this.check_In_UC.Location = new System.Drawing.Point(33, 39);
-            this.check_In_UC.Margin = new System.Windows.Forms.Padding(5);
-            this.check_In_UC.Name = "check_In_UC";
-            this.check_In_UC.Size = new System.Drawing.Size(200, 200);
-            this.check_In_UC.TabIndex = 3;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -246,6 +248,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.hotelDbDataSet)).EndInit();
             this.mainPanel.ResumeLayout(false);
             this.headerPanel.ResumeLayout(false);
+            this.headerPanel.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

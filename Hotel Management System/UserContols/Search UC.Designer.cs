@@ -78,9 +78,10 @@
             this.phoneNumberDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.clientsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(316, 40);
+            this.dataGridView1.Location = new System.Drawing.Point(316, 150);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1295, 200);
+            this.dataGridView1.Size = new System.Drawing.Size(1300, 200);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
@@ -129,7 +130,7 @@
             // txtLastName
             // 
             this.txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "LastName", true));
-            this.txtLastName.Location = new System.Drawing.Point(842, 338);
+            this.txtLastName.Location = new System.Drawing.Point(842, 450);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(240, 26);
             this.txtLastName.TabIndex = 2;
@@ -139,7 +140,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(838, 315);
+            this.label2.Location = new System.Drawing.Point(838, 427);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 20);
@@ -154,7 +155,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(838, 253);
+            this.label3.Location = new System.Drawing.Point(838, 365);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 20);
@@ -165,7 +166,7 @@
             // 
             this.txtFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "FirstName", true));
             this.txtFirstName.Enabled = false;
-            this.txtFirstName.Location = new System.Drawing.Point(842, 276);
+            this.txtFirstName.Location = new System.Drawing.Point(842, 388);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(240, 26);
             this.txtFirstName.TabIndex = 6;
@@ -174,7 +175,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(838, 377);
+            this.label4.Location = new System.Drawing.Point(838, 489);
             this.label4.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 20);
@@ -185,7 +186,7 @@
             // 
             this.txtPhoneNumber.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "PhoneNumber", true));
             this.txtPhoneNumber.Enabled = false;
-            this.txtPhoneNumber.Location = new System.Drawing.Point(842, 402);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(842, 514);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(240, 26);
             this.txtPhoneNumber.TabIndex = 8;
@@ -194,7 +195,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(838, 441);
+            this.label5.Location = new System.Drawing.Point(838, 553);
             this.label5.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 20);
@@ -205,7 +206,7 @@
             // 
             this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "Email", true));
             this.txtEmail.Enabled = false;
-            this.txtEmail.Location = new System.Drawing.Point(842, 464);
+            this.txtEmail.Location = new System.Drawing.Point(842, 576);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(240, 26);
             this.txtEmail.TabIndex = 10;
@@ -216,7 +217,7 @@
             this.btnUpdate.Enabled = false;
             this.btnUpdate.Image = global::Hotel_Management_System.Properties.Resources._64_edit;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnUpdate.Location = new System.Drawing.Point(48, 3);
+            this.btnUpdate.Location = new System.Drawing.Point(3, 3);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnUpdate.Size = new System.Drawing.Size(130, 130);
@@ -232,7 +233,7 @@
             this.btnCheckOut.Enabled = false;
             this.btnCheckOut.Image = global::Hotel_Management_System.Properties.Resources._64_minus;
             this.btnCheckOut.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCheckOut.Location = new System.Drawing.Point(184, 3);
+            this.btnCheckOut.Location = new System.Drawing.Point(139, 3);
             this.btnCheckOut.Name = "btnCheckOut";
             this.btnCheckOut.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnCheckOut.Size = new System.Drawing.Size(130, 130);
@@ -249,7 +250,7 @@
             this.btnClear.ForeColor = System.Drawing.Color.Black;
             this.btnClear.Image = global::Hotel_Management_System.Properties.Resources._64_cross;
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnClear.Location = new System.Drawing.Point(320, 3);
+            this.btnClear.Location = new System.Drawing.Point(275, 3);
             this.btnClear.Name = "btnClear";
             this.btnClear.Padding = new System.Windows.Forms.Padding(5, 10, 5, 5);
             this.btnClear.Size = new System.Drawing.Size(130, 130);
@@ -261,13 +262,15 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.Controls.Add(this.btnUpdate);
             this.flowLayoutPanel1.Controls.Add(this.btnCheckOut);
             this.flowLayoutPanel1.Controls.Add(this.btnClear);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(720, 514);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(756, 610);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(480, 345);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(408, 136);
             this.flowLayoutPanel1.TabIndex = 14;
             // 
             // Search_User_Control
