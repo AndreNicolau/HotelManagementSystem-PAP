@@ -92,6 +92,7 @@ namespace Hotel_Management_System.UserContols
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             usersTableAdapter.UpdateByUsername(txtUsername.Text, txtPassword.Text);
+            dataGridView1.DataSource = usersTableAdapter.GetData();
         }
 
         private void btnRemoveUser_Click(object sender, EventArgs e)
@@ -129,10 +130,6 @@ namespace Hotel_Management_System.UserContols
                 dataGridView1.DataSource = usersTableAdapter.GetData();
         }
 
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-            CanInsertNewUser();
-        }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {

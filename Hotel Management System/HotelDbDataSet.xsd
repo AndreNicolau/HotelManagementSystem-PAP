@@ -223,7 +223,7 @@ SELECT ID, Username, Password FROM Users WHERE (ID = @ID)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="HotelDbConnectionString (Settings)" DbObjectName="HotelDb.dbo.InsertUser" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsertUser" Modifier="Public" Name="InsertUser" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="InsertUser">
+              <DbSource ConnectionRef="HotelDbConnectionString (Settings)" DbObjectName="HotelDb.dbo.InsertUser" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsertUser" Modifier="Public" Name="InsertUser" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertUser">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.InsertUser</CommandText>
@@ -235,7 +235,7 @@ SELECT ID, Username, Password FROM Users WHERE (ID = @ID)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="HotelDbConnectionString (Settings)" DbObjectName="HotelDb.dbo.UpdateByUsername" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="UpdateByUsername" Modifier="Public" Name="UpdateByUsername" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="UpdateByUsername">
+              <DbSource ConnectionRef="HotelDbConnectionString (Settings)" DbObjectName="HotelDb.dbo.UpdateByUsername" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="UpdateByUsername" Modifier="Public" Name="UpdateByUsername" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateByUsername">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.UpdateByUsername</CommandText>

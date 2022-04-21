@@ -5,6 +5,7 @@ namespace Hotel_Management_System.UserContols
 {
     public partial class Search_User_Control : UserControl
     {
+
         public Search_User_Control()
         {
             InitializeComponent();
@@ -101,6 +102,11 @@ namespace Hotel_Management_System.UserContols
         private void btnClear_Click(object sender, EventArgs e)
         {
             ClearTextBoxes();
+        }
+
+        private void Search_User_Control_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
