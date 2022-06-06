@@ -108,5 +108,10 @@ namespace Hotel_Management_System.UserContols
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = clientsTableAdapter.GetData();
+        }
     }
 }

@@ -50,6 +50,8 @@ namespace Hotel_Management_System
         // Show Search UserControl
         private void rdoSearch_CheckedChanged(object sender, EventArgs e)
         {
+            clientsTableAdapter.GetData();
+
             if (rdoSearch.Checked)
             {
                 search_UC.Dock = DockStyle.Fill;

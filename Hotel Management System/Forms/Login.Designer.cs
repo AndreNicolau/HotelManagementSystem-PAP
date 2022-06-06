@@ -39,6 +39,7 @@
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.usersTableAdapter = new Hotel_Management_System.HotelDbDataSetTableAdapters.UsersTableAdapter();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -184,6 +185,10 @@
             this.panel1.Size = new System.Drawing.Size(550, 650);
             this.panel1.TabIndex = 9;
             // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -225,5 +230,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
+        private HotelDbDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
     }
 }
